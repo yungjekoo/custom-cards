@@ -1,0 +1,161 @@
+.griddle .griddle-settings .griddle-columns .griddle-column-selection:first-child:before {
+    content: '';
+}
+
+/* Don't display textbox */
+.griddle .griddle-settings input[type=checkbox] {
+ 
+}
+
+/* Make column name faded out when "unchecked" */
+.griddle .griddle-settings input[type=checkbox] + span {
+    color: #000;
+    cursor  : pointer;
+}
+
+/* Make column name underlined when "checked" */
+.griddle .griddle-settings input[type=checkbox]:checked + span {
+    color: #000;
+    cursor  : pointer;
+// text-decoration: underline;
+}
+
+.filter-container input {
+    font-size: medium;
+}
+
+
+.vCardsWrapper {
+    height: 100%;    
+}
+
+.griddle tr:hover td {
+    background:#e3e3e5 !important;
+        /*cursor: pointer;*/
+}   
+
+.griddle-column-selection {
+    float: left;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.griddle table{ 
+    color: black; 
+    border-spacing: 0px;  
+    word-wrap: break-word;
+    background-color: white;  
+    width: 100%;
+}
+
+.griddle td.footer-container {
+   /* display: none;  if set infinite scroll */ 
+    padding: 0px;
+    width: 100%;
+    cursor: default;
+    background: #e3e3e5; 
+}
+
+.griddle-next {
+    text-align: left;
+    width: 40%;
+    float: left;
+    min-height: 1px;
+    margin-top: 5px;
+}
+
+.griddle-next button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.griddle-previous {
+    text-align: right;
+    width: 40%;
+    float: left;
+    min-height: 1px;
+    margin-top: 5px;
+}
+
+.griddle-previous button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.griddle-page {
+    text-align: center;
+    width: 20%;
+    float: left;
+    min-height: 1px;
+    margin-top: 5px;   
+}
+
+.griddle-settings {
+    background-color: #F5F5F5;
+    float: right;
+    width: 100%;
+    color: black;
+}
+
+
+.griddle table th {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.griddle table td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E1E1E1;
+    cursor: pointer;
+    overflow: hidden;
+    height: 45px;
+}
+
+.griddle .griddle-body{
+    background-color: white;  
+}
+
+.griddle-settings-toggle { 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.griddle-filter { 
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+/*.top-section {    
+    background-color: white;  
+}*/
+
+.griddle-container {
+    float: left;
+    width: 100%;
+}
+
+.button {
+    width   : 80px;
+    background  : none;
+    cursor  : pointer;
+    font-family : 'voltaeftu-regular',Times New Roman;
+    font-size   : 16px;
+    color   : #fff;
+    border  : none;
+    margin      : 0px;
+    padding     : 0px;
+}

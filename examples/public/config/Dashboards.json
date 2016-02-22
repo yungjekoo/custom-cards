@@ -1,0 +1,1992 @@
+{
+  "settings": {
+    "defaultDashboard": "a4027b91-b2b7-4211-a3e1-ad1c472b568a"
+  },
+  "dashboards": [
+    {
+      "name": "a4027b91-b2b7-4211-a3e1-ad1c472b568a",
+      "label": "Overview",
+      "icon": "res/images/icons/smarterHome()/gs7.png",
+      "image": "res/images/groups/default.jpg",
+      "thumb": "res/images/groups/smarterHome()/g7.png",
+      "hidden": false,
+      "type": "TILE",
+      "locked": false,
+      "preset": false,
+      "layouts": {
+        "xxl": [
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 33,
+            "i": "e2d1b968-1023-49d4-b310-5ed71607b5dd"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 27,
+            "i": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 28,
+            "i": "e12386bc-0893-469c-ae2d-7c862ed88c4e"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 28,
+            "i": "17ac39c9-7edd-4a48-ad45-06b20c69e624"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 11,
+            "i": "17973ccb-0c83-4500-8710-178825809755"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 9,
+            "i": "d78ed944-d2bc-4804-a2a9-c44ce30739b6"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 8,
+            "i": "6b6a7c93-09b0-41d4-9a10-583beb1942d7"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 4,
+            "y": 9,
+            "i": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 4,
+            "y": 32,
+            "i": "13428484-319d-486a-9c4e-108e3144d320"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 38,
+            "i": "c2bb3b35-2a6e-4a90-9427-a16261ad7311"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 2,
+            "y": 15,
+            "i": "08083c25-ed04-4bce-b00d-1341aa720e80"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 19,
+            "i": "6e521d96-e7e1-4da1-a552-62654042d62c"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 15,
+            "i": "931b88ae-8121-4a42-a29d-d570e988d4b9"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 22,
+            "i": "0695c54a-3123-468a-8d76-07ba25ad4c47"
+          },
+          {
+            "w": 4,
+            "h": 3,
+            "x": 4,
+            "y": 19,
+            "i": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 14,
+            "i": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 0,
+            "i": "570e15b4-9942-4c64-887d-cca423135ed0"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 1,
+            "i": "aae20d34-a862-467c-95be-76a6eaacab8e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 1,
+            "i": "c0909ede-4a19-418a-9caa-e7b84a833da4"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 1,
+            "i": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 4,
+            "i": "5d707e57-4edd-461a-bd72-115d52285488"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 4,
+            "y": 0,
+            "i": "e41039ea-8258-459a-a1dc-286ab639dd9d"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 15,
+            "i": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 23,
+            "i": "940483d2-3a07-4840-a13d-47982b2aa082"
+          }
+        ],
+        "xl": [
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 33,
+            "i": "e2d1b968-1023-49d4-b310-5ed71607b5dd"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 27,
+            "i": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 28,
+            "i": "e12386bc-0893-469c-ae2d-7c862ed88c4e"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 28,
+            "i": "17ac39c9-7edd-4a48-ad45-06b20c69e624"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 11,
+            "i": "17973ccb-0c83-4500-8710-178825809755"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 9,
+            "i": "d78ed944-d2bc-4804-a2a9-c44ce30739b6"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 8,
+            "i": "6b6a7c93-09b0-41d4-9a10-583beb1942d7"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 4,
+            "y": 9,
+            "i": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 4,
+            "y": 32,
+            "i": "13428484-319d-486a-9c4e-108e3144d320"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 38,
+            "i": "c2bb3b35-2a6e-4a90-9427-a16261ad7311"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 2,
+            "y": 15,
+            "i": "08083c25-ed04-4bce-b00d-1341aa720e80"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 19,
+            "i": "6e521d96-e7e1-4da1-a552-62654042d62c"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 15,
+            "i": "931b88ae-8121-4a42-a29d-d570e988d4b9"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 22,
+            "i": "0695c54a-3123-468a-8d76-07ba25ad4c47"
+          },
+          {
+            "w": 4,
+            "h": 3,
+            "x": 4,
+            "y": 19,
+            "i": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d"
+          },
+          {
+            "w": 8,
+            "h": 1,
+            "x": 0,
+            "y": 14,
+            "i": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 0,
+            "i": "570e15b4-9942-4c64-887d-cca423135ed0"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 4,
+            "y": 1,
+            "i": "aae20d34-a862-467c-95be-76a6eaacab8e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 1,
+            "i": "c0909ede-4a19-418a-9caa-e7b84a833da4"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 1,
+            "i": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 4,
+            "i": "5d707e57-4edd-461a-bd72-115d52285488"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 4,
+            "y": 0,
+            "i": "e41039ea-8258-459a-a1dc-286ab639dd9d"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 15,
+            "i": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 23,
+            "i": "940483d2-3a07-4840-a13d-47982b2aa082"
+          }
+        ],
+        "lg": [
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 41,
+            "i": "e2d1b968-1023-49d4-b310-5ed71607b5dd"
+          },
+          {
+            "w": 6,
+            "h": 1,
+            "x": 0,
+            "y": 33,
+            "i": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 34,
+            "i": "e12386bc-0893-469c-ae2d-7c862ed88c4e"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 46,
+            "i": "17ac39c9-7edd-4a48-ad45-06b20c69e624"
+          },
+          {
+            "w": 2,
+            "h": 2,
+            "x": 0,
+            "y": 9,
+            "i": "17973ccb-0c83-4500-8710-178825809755"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 2,
+            "y": 9,
+            "i": "d78ed944-d2bc-4804-a2a9-c44ce30739b6"
+          },
+          {
+            "w": 6,
+            "h": 1,
+            "x": 0,
+            "y": 8,
+            "i": "6b6a7c93-09b0-41d4-9a10-583beb1942d7"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 11,
+            "i": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 39,
+            "i": "13428484-319d-486a-9c4e-108e3144d320"
+          },
+          {
+            "w": 2,
+            "h": 8,
+            "x": 4,
+            "y": 34,
+            "i": "c2bb3b35-2a6e-4a90-9427-a16261ad7311"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 2,
+            "y": 17,
+            "i": "08083c25-ed04-4bce-b00d-1341aa720e80"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 21,
+            "i": "6e521d96-e7e1-4da1-a552-62654042d62c"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 2,
+            "y": 29,
+            "i": "931b88ae-8121-4a42-a29d-d570e988d4b9"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 2,
+            "y": 25,
+            "i": "0695c54a-3123-468a-8d76-07ba25ad4c47"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 4,
+            "y": 17,
+            "i": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d"
+          },
+          {
+            "w": 6,
+            "h": 1,
+            "x": 0,
+            "y": 16,
+            "i": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 0,
+            "i": "570e15b4-9942-4c64-887d-cca423135ed0"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 4,
+            "y": 1,
+            "i": "aae20d34-a862-467c-95be-76a6eaacab8e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 1,
+            "i": "c0909ede-4a19-418a-9caa-e7b84a833da4"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 1,
+            "i": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 4,
+            "i": "5d707e57-4edd-461a-bd72-115d52285488"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 4,
+            "y": 0,
+            "i": "e41039ea-8258-459a-a1dc-286ab639dd9d"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 17,
+            "i": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 2,
+            "y": 21,
+            "i": "940483d2-3a07-4840-a13d-47982b2aa082"
+          }
+        ],
+        "md": [
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 32,
+            "i": "e2d1b968-1023-49d4-b310-5ed71607b5dd"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 29,
+            "i": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 36,
+            "i": "e12386bc-0893-469c-ae2d-7c862ed88c4e"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 41,
+            "i": "17ac39c9-7edd-4a48-ad45-06b20c69e624"
+          },
+          {
+            "w": 2,
+            "h": 2,
+            "x": 0,
+            "y": 51,
+            "i": "17973ccb-0c83-4500-8710-178825809755"
+          },
+          {
+            "w": 3,
+            "h": 2,
+            "x": 0,
+            "y": 53,
+            "i": "d78ed944-d2bc-4804-a2a9-c44ce30739b6"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 45,
+            "i": "6b6a7c93-09b0-41d4-9a10-583beb1942d7"
+          },
+          {
+            "w": 4,
+            "h": 5,
+            "x": 0,
+            "y": 46,
+            "i": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320"
+          },
+          {
+            "w": 4,
+            "h": 2,
+            "x": 0,
+            "y": 30,
+            "i": "13428484-319d-486a-9c4e-108e3144d320"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 32,
+            "i": "c2bb3b35-2a6e-4a90-9427-a16261ad7311"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 2,
+            "y": 10,
+            "i": "08083c25-ed04-4bce-b00d-1341aa720e80"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 14,
+            "i": "6e521d96-e7e1-4da1-a552-62654042d62c"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 25,
+            "i": "931b88ae-8121-4a42-a29d-d570e988d4b9"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 21,
+            "i": "0695c54a-3123-468a-8d76-07ba25ad4c47"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 14,
+            "i": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 9,
+            "i": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7"
+          },
+          {
+            "w": 4,
+            "h": 1,
+            "x": 0,
+            "y": 0,
+            "i": "570e15b4-9942-4c64-887d-cca423135ed0"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 2,
+            "y": 5,
+            "i": "aae20d34-a862-467c-95be-76a6eaacab8e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 4,
+            "i": "c0909ede-4a19-418a-9caa-e7b84a833da4"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 1,
+            "i": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 2,
+            "y": 1,
+            "i": "5d707e57-4edd-461a-bd72-115d52285488"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 2,
+            "y": 4,
+            "i": "e41039ea-8258-459a-a1dc-286ab639dd9d"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 10,
+            "i": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35"
+          },
+          {
+            "w": 4,
+            "h": 4,
+            "x": 0,
+            "y": 17,
+            "i": "940483d2-3a07-4840-a13d-47982b2aa082"
+          }
+        ],
+        "sm": [
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 0,
+            "i": "e2d1b968-1023-49d4-b310-5ed71607b5dd"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 3,
+            "i": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 4,
+            "i": "e12386bc-0893-469c-ae2d-7c862ed88c4e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 7,
+            "i": "17ac39c9-7edd-4a48-ad45-06b20c69e624"
+          },
+          {
+            "w": 2,
+            "h": 2,
+            "x": 0,
+            "y": 10,
+            "i": "17973ccb-0c83-4500-8710-178825809755"
+          },
+          {
+            "w": 2,
+            "h": 2,
+            "x": 0,
+            "y": 12,
+            "i": "d78ed944-d2bc-4804-a2a9-c44ce30739b6"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 14,
+            "i": "6b6a7c93-09b0-41d4-9a10-583beb1942d7"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 15,
+            "i": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 18,
+            "i": "13428484-319d-486a-9c4e-108e3144d320"
+          },
+          {
+            "w": 2,
+            "h": 4,
+            "x": 0,
+            "y": 22,
+            "i": "c2bb3b35-2a6e-4a90-9427-a16261ad7311"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 26,
+            "i": "08083c25-ed04-4bce-b00d-1341aa720e80"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 27,
+            "i": "6e521d96-e7e1-4da1-a552-62654042d62c"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 45,
+            "i": "931b88ae-8121-4a42-a29d-d570e988d4b9"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 48,
+            "i": "0695c54a-3123-468a-8d76-07ba25ad4c47"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 51,
+            "i": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 44,
+            "i": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 34,
+            "i": "570e15b4-9942-4c64-887d-cca423135ed0"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 31,
+            "i": "aae20d34-a862-467c-95be-76a6eaacab8e"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 35,
+            "i": "c0909ede-4a19-418a-9caa-e7b84a833da4"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 41,
+            "i": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d"
+          },
+          {
+            "w": 2,
+            "h": 3,
+            "x": 0,
+            "y": 38,
+            "i": "5d707e57-4edd-461a-bd72-115d52285488"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 30,
+            "i": "e41039ea-8258-459a-a1dc-286ab639dd9d"
+          },
+          {
+            "w": 2,
+            "h": 1,
+            "x": 0,
+            "y": 54,
+            "i": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35"
+          },
+          {
+            "w": 2,
+            "h": 6,
+            "x": 0,
+            "y": 55,
+            "i": "940483d2-3a07-4840-a13d-47982b2aa082"
+          }
+        ]
+      },
+      "components": [
+        {
+          "id": "e2d1b968-1023-49d4-b310-5ed71607b5dd",
+          "type": "DeviceMap",
+          "parameters": {
+            "component": "DeviceMap",
+            "title": "Where is my car",
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 1,
+              "xl": 1,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "dec5568c-226c-4be5-b035-34238ba1ec11",
+                "device": "FLMSH",
+                "event": "MunicBox_Corsa",
+                "property": "",
+                "unit": "",
+                "type": "string",
+                "label": "Vivaro"
+              },
+              {
+                "id": "70bdd923-4680-4502-a462-6edee9148ed9",
+                "device": "FLMSH",
+                "event": "MunicBox_Vivaro",
+                "property": "",
+                "unit": "",
+                "type": "string",
+                "label": "Corsa"
+              }
+            ],
+            "longitude": "d.lng",
+            "latitude": "d.lat",
+            "showMyLocation": true,
+            "maxZoom": 16,
+            "type": "osm"
+          }
+        },
+        {
+          "id": "ced7ee3e-0dec-4a54-a7ec-c17ebb0b474e",
+          "type": "HorizontalLine",
+          "parameters": {
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 3,
+              "xl": 4,
+              "xxl": 0
+            },
+            "component": "HorizontalLine",
+            "title": "Custom cards",
+            "plots": [],
+            "color": 2
+          }
+        },
+        {
+          "id": "e12386bc-0893-469c-ae2d-7c862ed88c4e",
+          "type": "Webcam",
+          "parameters": {
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 1,
+              "xl": 1,
+              "xxl": 0
+            },
+            "component": "Webcam",
+            "title": "Munich",
+            "plots": []
+          }
+        },
+        {
+          "id": "17ac39c9-7edd-4a48-ad45-06b20c69e624",
+          "type": "Runtastic",
+          "parameters": {
+            "component": "Runtastic",
+            "title": "My last run",
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 1,
+              "xl": 1,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "a615cd9d-d4c2-49cc-b589-de9005be7d03",
+                "device": "FLMSH",
+                "event": "Runtastic",
+                "property": "",
+                "unit": "",
+                "type": "string",
+                "label": "Runtastic"
+              }
+            ],
+            "color": 3
+          }
+        },
+        {
+          "id": "17973ccb-0c83-4500-8710-178825809755",
+          "type": "ToggleGroup",
+          "parameters": {
+            "component": "ToggleGroup",
+            "title": "Doors",
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 0,
+              "xl": 3,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "d22b48cd-4c91-4a14-a0cc-6760dd3a3aa5",
+                "device": "FLMSH",
+                "event": "Door_Basement",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Basement door"
+              },
+              {
+                "id": "02c8a8a6-6188-404c-966c-3a99b33c988d",
+                "device": "FLMSH",
+                "event": "Front_Door",
+                "property": "d.DoorOpen",
+                "unit": "",
+                "type": "boolean",
+                "label": "Front door"
+              }
+            ],
+            "iconType": "DOOR",
+            "invert": false
+          }
+        },
+        {
+          "id": "d78ed944-d2bc-4804-a2a9-c44ce30739b6",
+          "type": "ToggleGroup",
+          "parameters": {
+            "component": "ToggleGroup",
+            "title": "Windows",
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 3,
+              "xl": 3,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "a33eb0ed-abb2-493d-b97a-5c9d2c7e18e9",
+                "device": "FLMSH",
+                "event": "Window_Megan_West",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Megan West"
+              },
+              {
+                "id": "addcec15-9e32-47a1-86ec-799d5445ecc3",
+                "device": "FLMSH",
+                "event": "Window_Kitchen",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Kitchen"
+              },
+              {
+                "id": "5dc0826a-4d5c-43b8-a15b-46b4e11043de",
+                "device": "FLMSH",
+                "event": "Window_Dining_Room",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Dining Room"
+              },
+              {
+                "id": "5c207651-de28-4a8b-9b3a-02bea6213922",
+                "device": "FLMSH",
+                "event": "Window_Home_Office",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Home Office"
+              },
+              {
+                "id": "392428e5-874b-417e-86b1-0827365eb1b3",
+                "device": "FLMSH",
+                "event": "Window_Living_Room",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Living Room"
+              }
+            ],
+            "color": 2,
+            "iconType": "WINDOW",
+            "invert": false
+          }
+        },
+        {
+          "id": "6b6a7c93-09b0-41d4-9a10-583beb1942d7",
+          "type": "HorizontalLine",
+          "parameters": {
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 3,
+              "xl": 4,
+              "xxl": 0
+            },
+            "component": "HorizontalLine",
+            "title": "States",
+            "plots": []
+          }
+        },
+        {
+          "id": "c69a0ac4-06b4-4b74-97ac-d4575b9ac320",
+          "type": "ToggleGroup",
+          "parameters": {
+            "component": "ToggleGroup",
+            "title": "Lights",
+            "size": {
+              "sm": 0,
+              "md": 5,
+              "lg": 5,
+              "xl": 5,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "c9cc7050-5478-4a61-9944-4ebd536241b3",
+                "device": "FLMSH",
+                "event": "Light_Hall_1_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Hall 1"
+              },
+              {
+                "id": "06d0a09c-a022-4816-b48d-bc6535438caa",
+                "device": "FLMSH",
+                "event": "Light_Garden",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Garden"
+              },
+              {
+                "id": "90190645-a2e3-4590-897e-3d0339d21d12",
+                "device": "FLMSH",
+                "event": "Light_Winter_Garden_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Winter Garden"
+              },
+              {
+                "id": "149a6ea9-4c83-40c3-ba33-520b526baaab",
+                "device": "FLMSH",
+                "event": "Light_Couch",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Couch"
+              },
+              {
+                "id": "67cc99b7-4d36-4c60-b807-a5e6b738ca83",
+                "device": "FLMSH",
+                "event": "Light_Upper_Bath_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Bath"
+              },
+              {
+                "id": "d15c1197-c282-4c8b-8e10-327913d7bbd6",
+                "device": "FLMSH",
+                "event": "Light_Kitchen_1_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Kitchen"
+              },
+              {
+                "id": "8bbb208e-6dab-4d4e-a220-a49524940d35",
+                "device": "FLMSH",
+                "event": "Light_Henry_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Henry"
+              },
+              {
+                "id": "2a8190b5-36e9-4178-8a1b-314a3e8e77a7",
+                "device": "FLMSH",
+                "event": "Light_Hue_Side_Table",
+                "property": "d.Status",
+                "unit": "",
+                "type": "boolean",
+                "label": "Side Table"
+              },
+              {
+                "id": "c3d91144-d893-4d43-8b94-64415142ed9b",
+                "device": "FLMSH",
+                "event": "Light_Megan_Bed",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Megan Desk"
+              },
+              {
+                "id": "83ad6c62-36cd-4d74-bd19-7c317721a0ae",
+                "device": "FLMSH",
+                "event": "Light_Hue_Living_Room_Lamp",
+                "property": "d.Status",
+                "unit": "",
+                "type": "boolean",
+                "label": "Living Room Lamp"
+              },
+              {
+                "id": "52bc0677-951d-4c5e-adb4-0bc858956760",
+                "device": "FLMSH",
+                "event": "Light_Playground",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Playground"
+              },
+              {
+                "id": "3b9b87d5-7b4e-4c92-bde2-145447e6aa16",
+                "device": "FLMSH",
+                "event": "Light_Megan_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Megan"
+              },
+              {
+                "id": "06e4985a-24a6-4001-8841-541a4681a7d7",
+                "device": "FLMSH",
+                "event": "Light_Book_Shelf",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Book Shelf"
+              },
+              {
+                "id": "4bd28508-1970-47ec-b827-213cc1516b48",
+                "device": "FLMSH",
+                "event": "Light_Hall_2_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Hall 2"
+              },
+              {
+                "id": "134c8a7d-9ab7-4a3e-b943-9a6856113ee6",
+                "device": "FLMSH",
+                "event": "Light_Office_Desk",
+                "property": "d.StatusVariable",
+                "unit": "",
+                "type": "boolean",
+                "label": "Office Desk"
+              },
+              {
+                "id": "c7a26747-2318-4000-9442-4be7a0875190",
+                "device": "FLMSH",
+                "event": "Light_Hue_Living_Room",
+                "property": "d.Status",
+                "unit": "",
+                "type": "boolean",
+                "label": "Living Room"
+              },
+              {
+                "id": "051066a5-4214-4a02-b89e-1262bee5aec5",
+                "device": "FLMSH",
+                "event": "Light_Balcony_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Balcony"
+              },
+              {
+                "id": "0de69d15-8277-447a-b4eb-d536b8310638",
+                "device": "FLMSH",
+                "event": "Light_Kitchen_2_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Kitchen 2"
+              },
+              {
+                "id": "7377be4b-4c52-4135-9c69-59806d16ee4d",
+                "device": "FLMSH",
+                "event": "Light_Hallway_HM",
+                "property": "d.STATE",
+                "unit": "",
+                "type": "boolean",
+                "label": "Hallway"
+              }
+            ],
+            "color": 1,
+            "iconType": "LIGHT",
+            "invert": false
+          }
+        },
+        {
+          "id": "13428484-319d-486a-9c4e-108e3144d320",
+          "type": "WeatherService",
+          "parameters": {
+            "component": "WeatherService",
+            "location": "Rottenburg",
+            "title": "Weather in Eutingen/Germany",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 4,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "77223beb-1add-4bb2-bb59-7b7a933ec30e",
+                "device": "FLMSH",
+                "event": "Weather_Service",
+                "property": "d.Location",
+                "unit": "",
+                "type": "string",
+                "label": "New DataSet"
+              }
+            ]
+          }
+        },
+        {
+          "id": "c2bb3b35-2a6e-4a90-9427-a16261ad7311",
+          "type": "Elevator",
+          "parameters": {
+            "component": "Elevator",
+            "title": "Elevator",
+            "floor": "12d6ea75-07ae-4e38-a9e7-a84cbeb2cdb0",
+            "height": "d68421e2-b1b4-40ae-a78a-28444843cd1e",
+            "weight": "9b53712c-7cb1-4c76-83b2-70453176843c",
+            "autoscroll": true,
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 2,
+              "xl": 0,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "12d6ea75-07ae-4e38-a9e7-a84cbeb2cdb0",
+                "device": "FLMElevator",
+                "event": "status",
+                "property": "location.floor",
+                "unit": "",
+                "type": "integer",
+                "label": "Floor",
+                "min": 0,
+                "max": 6
+              },
+              {
+                "id": "d68421e2-b1b4-40ae-a78a-28444843cd1e",
+                "device": "FLMElevator",
+                "event": "status",
+                "property": "location.height",
+                "unit": "m",
+                "type": "float",
+                "label": "Height",
+                "min": 0,
+                "max": 24,
+                "precision": 1
+              },
+              {
+                "id": "9b53712c-7cb1-4c76-83b2-70453176843c",
+                "device": "FLMElevator",
+                "event": "status",
+                "property": "weight.value",
+                "unit": "kg",
+                "type": "float",
+                "label": "Weight",
+                "min": 0,
+                "max": 2000,
+                "precision": 1
+              }
+            ],
+            "color": 0
+          }
+        },
+        {
+          "id": "08083c25-ed04-4bce-b00d-1341aa720e80",
+          "type": "Gauge",
+          "parameters": {
+            "component": "Gauge",
+            "title": "Production",
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 1,
+              "xl": 1,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "a1c5935d-7c66-43de-a12d-d98a5a404579",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.PAC",
+                "unit": "Watt",
+                "type": "float",
+                "label": "Production",
+                "min": 0,
+                "max": 6000,
+                "precision": 1
+              }
+            ],
+            "color": 1,
+            "major": "a1c5935d-7c66-43de-a12d-d98a5a404579",
+            "lowerThresholdMeaning": "CRITICAL",
+            "middleThresholdMeaning": "FAIR",
+            "upperThresholdMeaning": "GOOD",
+            "lowerThreshold": 500,
+            "upperThreshold": 2000
+          }
+        },
+        {
+          "id": "6e521d96-e7e1-4da1-a552-62654042d62c",
+          "type": "BarChart",
+          "parameters": {
+            "title": "AC Voltage",
+            "component": "BarChart",
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 0,
+              "xl": 2,
+              "xxl": 0
+            },
+            "plots": [
+              {
+                "id": "c0ae3033-2e18-4dd2-8d71-d7c58d074d17",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.UAC_L1",
+                "unit": "Volt",
+                "type": "float",
+                "label": "Phase 1",
+                "precision": 1
+              },
+              {
+                "id": "dcde0b7d-cd1a-48e0-b7ac-bcd92edccb7e",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.UAC_L2",
+                "unit": "Volt",
+                "type": "float",
+                "label": "Phase 2",
+                "precision": 1
+              },
+              {
+                "id": "eb72c479-ceb1-466c-939b-76c9b9da0d90",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.UAC_L3",
+                "unit": "Volt",
+                "type": "float",
+                "label": "Phase 3",
+                "precision": 1
+              }
+            ],
+            "color": 3,
+            "horizontal": true
+          }
+        },
+        {
+          "id": "931b88ae-8121-4a42-a29d-d570e988d4b9",
+          "type": "BarChart",
+          "parameters": {
+            "title": "Distance of mobile devices",
+            "component": "BarChart",
+            "type": "bar",
+            "horizontal": true,
+            "plots": [
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde901",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.HTCM8",
+                "color": 1,
+                "unit": "m",
+                "label": "HTC M8"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde902",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Heidi",
+                "color": 1,
+                "unit": "m",
+                "label": "Heidi"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde903",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Henry",
+                "color": 1,
+                "unit": "m",
+                "label": "Henry"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde904",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.MacBook",
+                "color": 1,
+                "unit": "m",
+                "label": "MacBook"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde905",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Frank",
+                "color": 1,
+                "unit": "m",
+                "label": "Frank"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde906",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Kyle",
+                "color": 1,
+                "unit": "m",
+                "label": "Kyle"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde907",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.FireTV",
+                "color": 1,
+                "unit": "m",
+                "label": "Fire TV"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde908",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Inverter",
+                "color": 1,
+                "unit": "m",
+                "label": "Inverter"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde909",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.iPadBlue",
+                "color": 1,
+                "unit": "m",
+                "label": "iPad blue"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde910",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.iPadGreen",
+                "color": 1,
+                "unit": "m",
+                "label": "iPad green"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde911",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.iPadGrey",
+                "color": 1,
+                "unit": "m",
+                "label": "iPad grey"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde912",
+                "device": "FLMSH",
+                "event": "Wifi",
+                "property": "d.Smarthome",
+                "color": 1,
+                "unit": "m",
+                "label": "Gateway"
+              }
+            ],
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 2,
+              "xxl": 2
+            },
+            "color": 2
+          }
+        },
+        {
+          "id": "0695c54a-3123-468a-8d76-07ba25ad4c47",
+          "type": "BarChart",
+          "parameters": {
+            "title": "Room temperature",
+            "component": "BarChart",
+            "autoscroll": true,
+            "type": "bar",
+            "color": 1,
+            "plots": [
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde901",
+                "device": "FLMSH",
+                "event": "Heating_Dining_Room_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Dining room"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde902",
+                "device": "FLMSH",
+                "event": "Heating_Hall_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Hall"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde903",
+                "device": "FLMSH",
+                "event": "Heating_Henry_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Henry"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde904",
+                "device": "FLMSH",
+                "event": "Heating_Home_Office_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Home office"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde905",
+                "device": "FLMSH",
+                "event": "Heating_Kitchen_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Kitchen"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde906",
+                "device": "FLMSH",
+                "event": "Heating_Living_Room_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Living room"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde907",
+                "device": "FLMSH",
+                "event": "Heating_Megan_HM",
+                "property": "d.ACTUAL_TEMPERATURE",
+                "color": 1,
+                "unit": "°C",
+                "label": "Megan"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde908",
+                "device": "FLMSH",
+                "event": "Temperature_Bath",
+                "property": "d.Variable1",
+                "color": 1,
+                "unit": "°C",
+                "label": "Bath"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde909",
+                "device": "FLMSH",
+                "event": "Temperature_Cellar",
+                "property": "d.Variable1",
+                "color": 1,
+                "unit": "°C",
+                "label": "Cellar"
+              }
+            ],
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 2,
+              "xxl": 0
+            }
+          }
+        },
+        {
+          "id": "cd7da235-b07d-4c30-a5eb-d7c526ccc59d",
+          "type": "DonutChart",
+          "parameters": {
+            "title": "AC Current",
+            "component": "DonutChart",
+            "type": "donut",
+            "plots": [
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde901",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.IAC_L1",
+                "color": 1,
+                "unit": "Ampere",
+                "label": "Phase 1"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde902",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.IAC_L2",
+                "color": 1,
+                "unit": "Ampere",
+                "label": "Phase 2"
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde903",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.IAC_L3",
+                "color": 1,
+                "unit": "Ampere",
+                "label": "Phase 3"
+              }
+            ],
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 1,
+              "xl": 2,
+              "xxl": 1
+            },
+            "color": 2
+          }
+        },
+        {
+          "id": "c9ad2d50-9685-4a32-9558-a6bb754cc1c7",
+          "type": "HorizontalLine",
+          "parameters": {
+            "component": "HorizontalLine",
+            "title": "Devices",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 3,
+              "xl": 4,
+              "xxl": 3
+            }
+          }
+        },
+        {
+          "id": "570e15b4-9942-4c64-887d-cca423135ed0",
+          "type": "HorizontalLine",
+          "parameters": {
+            "component": "HorizontalLine",
+            "title": "Usage",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 2,
+              "xxl": 2
+            }
+          }
+        },
+        {
+          "id": "aae20d34-a862-467c-95be-76a6eaacab8e",
+          "type": "DeviceTypes",
+          "parameters": {
+            "title": "Device types",
+            "component": "DeviceTypes",
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 2,
+              "xl": 3,
+              "xxl": 2
+            }
+          }
+        },
+        {
+          "id": "c0909ede-4a19-418a-9caa-e7b84a833da4",
+          "type": "UsageDeviceCard",
+          "parameters": {
+            "component": "UsageDeviceCard",
+            "title": "Device connections",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 2,
+              "xxl": 0
+            }
+          }
+        },
+        {
+          "id": "34c03b0d-29ae-4d50-8d2c-3d34a07b8d9d",
+          "type": "UsageDataCard",
+          "parameters": {
+            "component": "UsageDataCard",
+            "title": "Data consumed",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 2,
+              "xl": 2,
+              "xxl": 0
+            }
+          }
+        },
+        {
+          "id": "5d707e57-4edd-461a-bd72-115d52285488",
+          "type": "UsageStorageCard",
+          "parameters": {
+            "component": "UsageStorageCard",
+            "title": "Storage consumed",
+            "size": {
+              "sm": 0,
+              "md": 2,
+              "lg": 4,
+              "xl": 4,
+              "xxl": 4
+            }
+          }
+        },
+        {
+          "id": "e41039ea-8258-459a-a1dc-286ab639dd9d",
+          "type": "HorizontalLine",
+          "parameters": {
+            "component": "HorizontalLine",
+            "title": "Types",
+            "size": {
+              "sm": 0,
+              "md": 0,
+              "lg": 0,
+              "xl": 2,
+              "xxl": 0
+            }
+          }
+        },
+        {
+          "id": "05aea5b3-1eee-48e0-94d3-9d1a15cb3c35",
+          "type": "Gauge",
+          "parameters": {
+            "component": "Gauge",
+            "title": "Consumption",
+            "plots": [
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde901",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.POWER",
+                "min": 0,
+                "max": 8000,
+                "unit": "Watt",
+                "color": 1,
+                "precision": 2,
+                "label": "Consumption",
+                "type": "float"
+              }
+            ],
+            "needle": false,
+            "minDegree": 45,
+            "maxDegree": 315,
+            "size": {
+              "sm": 0,
+              "md": 1,
+              "lg": 1,
+              "xl": 1,
+              "xxl": 0
+            },
+            "color": 3,
+            "major": "8e1660b9-9c9a-44b4-9150-de1c7ccde901",
+            "lowerThresholdMeaning": "GOOD",
+            "middleThresholdMeaning": "FAIR",
+            "upperThresholdMeaning": "CRITICAL",
+            "lowerThreshold": 1000,
+            "upperThreshold": 3000
+          }
+        },
+        {
+          "id": "940483d2-3a07-4840-a13d-47982b2aa082",
+          "type": "RealTimeChart",
+          "parameters": {
+            "component": "RealTimeChart",
+            "title": "Current Consumption",
+            "autoscroll": true,
+            "device": "FLMSH",
+            "property": "26877-POWER",
+            "plots": [
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde905",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.POWER",
+                "color": 1,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Power",
+                "empty": false,
+                "precision": 1
+              },
+              {
+                "id": "03613036-8c15-4c2d-8eb0-60e54172a32b",
+                "device": "FLMSH",
+                "event": "Fronius",
+                "property": "d.PAC",
+                "color": 2,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Production",
+                "empty": false,
+                "precision": 1
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde906",
+                "device": "FLMSH",
+                "event": "WM_10kg_Meter",
+                "property": "d.POWER",
+                "color": 3,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Washing machine 10kg",
+                "empty": false,
+                "precision": 1
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde907",
+                "device": "FLMSH",
+                "event": "WM_7kg_Meter",
+                "property": "d.POWER",
+                "color": 4,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Washing machine 7kg",
+                "empty": false,
+                "precision": 1
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde908",
+                "device": "FLMSH",
+                "event": "Tumbler_Meter",
+                "property": "d.POWER",
+                "color": 5,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Tumbler",
+                "empty": false,
+                "precision": 1
+              },
+              {
+                "id": "8e1660b9-9c9a-44b4-9150-de1c7ccde909",
+                "device": "FLMSH",
+                "event": "Smartplug_Meter",
+                "property": "d.POWER",
+                "color": 6,
+                "includeZero": true,
+                "steps": false,
+                "dots": true,
+                "line": true,
+                "area": true,
+                "unit": "Watt",
+                "label": "Heatpump",
+                "empty": false,
+                "precision": 1
+              }
+            ],
+            "range": 60,
+            "overview": true,
+            "expanded": "8e1660b9-9c9a-44b4-9150-de1c7ccde905",
+            "stacked": false,
+            "size": {
+              "sm": 0,
+              "md": 3,
+              "lg": 3,
+              "xl": 3,
+              "xxl": 3
+            },
+            "color": 3
+          }
+        }
+      ]
+    }
+  ],
+  "configTimestamp": 1450867418073
+}

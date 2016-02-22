@@ -1,0 +1,21 @@
+{
+  "name": "ui-dev-flow-prototype",
+  "version": "1.0.0",
+  "description": "Hacking on ways to run the IoTF UI w/o going through a test stand",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.ibm.com:IoT/ui-dev-flow-prototype.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cfenv": "^1.0.3",
+    "express": "^4.13.3",
+    "request": "^2.67.0"
+  }
+}

@@ -1,0 +1,40 @@
+'use strict';
+
+var Reflux = require('reflux');
+
+module.exports = Reflux.createActions([
+  'loadConfig',
+  'loadDashboard',
+  'getComponents',
+  'storeLayouts',
+  'undo',
+  'expandCard',
+  'shrinkCard',
+  'setBreakpoint',
+  'customAction',
+  'addComponent',
+  'moveComponent',
+  'showDialogConfigSSO',
+  'showDialogSSOSignIn',
+  'showDialogAAAUserDetails',
+  'showDialogAddMember',
+  'showDialogLogin',
+  'submitSSOSignInData',
+  'submitAAAUserDetailsData',
+  'submitAddMemberData',
+  'submitLoginData',
+  'submitSSOData',
+  'showDialog',
+  'showConfigureComponent',
+  'configureComponent',
+  'getCategories',
+  'closeDialog',
+  'getComponent',
+  'deviceUpdated',
+  'removeComponent',
+  'notify',
+  'navigateRoute',
+  'addDashboard',
+  'removeDashboard',
+  'changeCardSize'
+]);

@@ -1,0 +1,40 @@
+var common = {};
+common.ConfigStore = require('./stores/ConfigStore.js');
+
+
+common.Accordion = require('./components/Accordion.jsx');
+common.BarChart = require('./components/BarChart.jsx');
+common.Button = require('./components/Button.jsx');
+common.CardDatapoint = require('./components/CardDatapoint.jsx');
+common.CardIndicator = require('./components/CardIndicator.jsx');
+common.CardFooter = require('./components/CardFooter.jsx');
+common.CardFooterDatapoint = require('./components/CardFooterDatapoint.jsx');
+common.CardLineChart = require('./components/CardLineChart.jsx');
+common.CardTable = require('./components/CardTable.jsx');
+common.CheckBox = require('./components/CheckBox.jsx');
+common.ColorSelection = require('./components/ColorSelection.jsx');
+common.ColorSchemeSelection = require('./components/ColorSchemeSelection.jsx');
+common.ComboBox = require('./components/ComboBox.jsx');
+common.DonutChart = require('./components/DonutChart.jsx');
+common.Dropdown = require('./components/Dropdown.jsx');
+common.Icon = require('./components/Icon.jsx');
+common.IconLink = require('./components/IconLink.jsx');
+common.ImagePreview = require('./components/ImagePreview.jsx');
+common.InputField = require('./components/InputField.jsx');
+common.Label = require('./components/Label.jsx');
+common.LineChart = require('./components/LineChart.jsx');
+common.LoadIndicator = require('./components/LoadIndicator.jsx');
+common.Map = require('./components/MapView.jsx');
+common.MapPin = require('./components/MapPin.jsx');
+common.Option = require('./components/Option.jsx');
+common.Portal = require('./components/Portal.jsx');
+common.SearchField = require('./components/SearchField.jsx');
+common.Section = require('./components/Section.jsx');
+common.Select = require('./components/Select.jsx');
+common.SwitchBtn = require('./components/SwitchBtn.jsx');
+common.Table = require('./components/Table.jsx');
+common.TableDetailBtn = require('./components/TableDetailBtn.jsx');
+common.TableImage = require('./components/TableImage.jsx');
+common.Tooltip = require('./components/Tooltip.jsx');
+
+module.exports = common;
