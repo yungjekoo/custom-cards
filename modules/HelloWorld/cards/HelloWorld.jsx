@@ -1,6 +1,6 @@
 var React = require('react');
-
-var LoadIndicator = require('../../common/components/LoadIndicator.jsx');
+var IoTFCommon = require('IoTFCommon');
+var LoadIndicator = IoTFCommon.LoadIndicator;
 var HelloWorldStore = require('../stores/HelloWorldStore.js');
 
 var RPT = React.PropTypes;

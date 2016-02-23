@@ -1,3 +1,11 @@
+//****************************************
+// Enter external name of the package here
+
+var packageName = 'SampleCards';
+
+//****************************************
+
+
 var fs     = require('fs');
 var path   = require('path');
 var gulp   = require('gulp');
@@ -19,8 +27,7 @@ var root = 'modules/';
 var nlsFile = 'nls/react-modules/messages-en.json';
 var lessFile = 'modules/Modules.less';
 var srcFile = 'modules/Modules.jsx';
-var moduleName = 'Modules';
-var destFile = 'Modules.js';
+var destFile = packageName + '.js';
 var destJSFolder = 'public/js/';
 var destCSSFolder = 'public/css/';
 var destResFolder = 'public/resources';
@@ -34,7 +41,7 @@ function getModuleFolders(dir) {
 }
 
 var customOpts = {
-  standalone: moduleName,
+  standalone: packageName,
   cache: {}, // required for watchify
   packageCache: {}, // required for watchify
   fullPaths: true // required to be true only for watchify
@@ -64,7 +71,7 @@ function buildJS() {
   gutil.log("Compiling: " + srcFile);
   return gulp.src(srcFile)
       .pipe(browserifyGulp({
-        standalone: moduleName
+        standalone: packageName
       }))
     .on('error', function(e) { console.log(e) })
       .pipe(rename(destFile))
@@ -92,7 +99,7 @@ function buildCSS() {
   gutil.log("Compiling: " + lessFile);
   return gulp.src(lessFile)
     .pipe(less())
-    .pipe(rename('Modules.css'))
+    .pipe(rename(packageName + '.css'))
     .pipe(gulp.dest(destCSSFolder))
 }
 gulp.task('build-css', function() {
@@ -109,7 +116,7 @@ gulp.task('build-nls', function() {
 });
 
 gulp.task('compress-js',['build-js'], function() {
-  return gulp.src('public/js/Modules.js')
+  return gulp.src('public/js/' + destFile)
      .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({

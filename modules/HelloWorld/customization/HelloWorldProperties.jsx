@@ -1,8 +1,9 @@
 var React = require('react');
+var IoTFCommon = require('IoTFCommon');
 var RPT = React.PropTypes;
-var InputField = require('../../common/components/InputField.jsx');
-var Label =require('../../common/components/Label.jsx');
-var ColorSelection = require('../../common/components/ColorSelection.jsx');
+var InputField = IoTFCommon.InputField;
+var Label = IoTFCommon.Label;
+var ColorSelection = IoTFCommon.ColorSelection;
 
 var styles = {
   container: {

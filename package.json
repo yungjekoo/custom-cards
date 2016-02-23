@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Development environment for IoTF React components",
   "author": "IBM",
+  "dependencies": {
+    "cfenv": "1.0.x",
+    "express": "4.12.x",
+    "https": "^1.0.0",
+    "request": "^2.67.0"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
@@ -60,7 +66,7 @@
     "./public/vendor/object-assign/index.js": "object-assign",
     "./public/vendor/eventemitter3/index.js": "eventemitter3",
     "./public/vendor/moment/moment.js": "moment",
-    "./public/js/IoTFComponents.js": "iotfcomponents",
+    "./examples/public/js/IoTCommon.js": "IoTFCommon",
     "react": "global:React",
     "ReactDOM": "global:ReactDOM",
     "react-dom": "global:ReactDOM",
@@ -81,10 +87,11 @@
     "_": "global:_",
     "object-assign": "global:object-assign",
     "eventemitter3": "global:eventemitter3",
-    "iotfcomponents": "global:iotfcomponents"
+    "iotfcomponents": "global:iotfcomponents",
+    "IoTFCommon": "global:IoTFCommon"
   },
   "scripts": {
     "watch": "gulp",
-    "start": "node examples/app.js"
+    "start": "node app.js"
   }
 }
