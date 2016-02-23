@@ -14,22 +14,21 @@ var sourcemaps = require('gulp-sourcemaps');
 var assign = require('lodash.assign');
 
 ////////////////////////
-var sources = 'components/**/*';
-var root = 'components/';
+var sources = 'modules/**/*';
+var root = 'modules/';
 var nlsFile = 'nls/react-modules/messages-en.json';
-var lessFile = 'components/IoTFComponents.less';
-var srcFile = 'components/IoTFComponents.jsx';
-var moduleName = 'IoTFComponents';
-var destFile = 'IoTFComponents.js';
-var destJSFolder = 'examples/public/js/';
-var destCSSFolder = 'examples/public/css/';
-var destResFolder = 'examples/public/resources';
-var destNLSFolder = 'examples/public/nls/react-modules/';
+var lessFile = 'modules/Modules.less';
+var srcFile = 'modules/Modules.jsx';
+var moduleName = 'Modules';
+var destFile = 'Modules.js';
+var destJSFolder = 'public/js/';
+var destCSSFolder = 'public/css/';
+var destResFolder = 'public/resources';
+var destNLSFolder = 'public/nls/react-modules/';
 
-function getComponentFolders(dir) {
+function getModuleFolders(dir) {
   return fs.readdirSync(dir)
     .filter(function(file) {
-//      return fs.statSync(path.join(dir, file)).isDirectory() && file != "common";
       return fs.statSync(path.join(dir, file)).isDirectory();
     });
 }
@@ -77,7 +76,7 @@ gulp.task('build-js', function() {
 
 function buildResources() {
   gutil.log("Building resources");
-  var folders = getComponentFolders(root);
+  var folders = getModuleFolders(root);
   for (var i in folders) {
     folders[i] = "components/" + folders[i] + "/resources/**/*";
   }
@@ -93,7 +92,7 @@ function buildCSS() {
   gutil.log("Compiling: " + lessFile);
   return gulp.src(lessFile)
     .pipe(less())
-    .pipe(rename('IoTFComponents.css'))
+    .pipe(rename('Modules.css'))
     .pipe(gulp.dest(destCSSFolder))
 }
 gulp.task('build-css', function() {
@@ -110,36 +109,25 @@ gulp.task('build-nls', function() {
 });
 
 gulp.task('compress-js',['build-js'], function() {
-  return gulp.src('examples/public/js/IoTFComponents.js')
+  return gulp.src('public/js/Modules.js')
      .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('examples/public/js'));
-});
-
-gulp.task('compress-ng', function() {
-  return gulp.src('examples/public/vendor-app/angular.js')
-     .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('examples/public/vendor-app'));
+    .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('compress-ol', function() {
-  return gulp.src('examples/public/vendor/openlayers/ol.js')
+  return gulp.src('public/vendor/openlayers/ol.js')
      .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('examples/public/vendor/openlayers'));
+    .pipe(gulp.dest('public/vendor/openlayers'));
 });
 
 gulp.task('watch', function() {
@@ -150,4 +138,4 @@ gulp.task('watch', function() {
   gulp.watch(sources + '.less', ['build-css']);
 });
 
-gulp.task('default', ['rebundle-js', 'build-res', 'build-css', 'build-nls','compress-ng', 'watch']);
+gulp.task('default', ['rebundle-js', 'build-res', 'build-css', 'build-nls','watch']);
