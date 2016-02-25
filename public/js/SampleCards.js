@@ -89,7 +89,9 @@ var HelloWorld = React.createClass({
       style = Object.assign(style, { color: this.props.theme.schemes[this.props.helloColor].normal });
 
       if (this.props.wrapper.width > 2) {
-        style = Object.assign(style, { backgroundImage: "url('../resources/images/little-kitty.jpg')" });
+        // we could link to the kitty image in the resource folder but the url depends on the location of the package.
+        // Therefore we point to the original on the Web.
+        style = Object.assign(style, { backgroundImage: "url('http://wallpaper.pickywallpapers.com/1366x768/little-kitty.jpg')" });
       }
 
       return React.createElement(

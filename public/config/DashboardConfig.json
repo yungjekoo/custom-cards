@@ -1,22 +1,22 @@
 {
   "settings": {
-    "package": "SampleCards"
+    "packageName": "SampleCards"
   },
 
   "components": [
     {
-      "name": "HelloWorld",
-      "displayName": "HelloWorld",
+      "name": "MyRemoteHelloWorld",
+      "displayName": "Remote HelloWorld",
       "description": "Example card with simple customization and store",
       "thumbnail" : "overview",
-      "category": "Samples",
+      "category": "Remote cards",
       "cardType": "NO_DATAPOINTS",
       "wrapper": "ReactWrapper",
       "sizes": [[2,3],[4,4]],
       "module": "HelloWorld",
       "parameters" : {
         "component": "HelloWorld",
-        "title": "Hello World!"
+        "title": "Remote Hello World!"
       },
       "customization": "HelloWorldProperties"
     }

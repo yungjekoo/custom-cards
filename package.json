@@ -4,6 +4,7 @@
   "description": "Development environment for IoTF React components",
   "author": "IBM",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "cfenv": "1.0.x",
     "express": "4.12.x",
     "https": "^1.0.0",

@@ -1,9 +1,9 @@
 # iotf-react
-Sandbox for developing React components for the IoT Foundation UI.
+Template for custom card creation
 
 ## Background
 
-React and Angular can fit together nicely in a UI architecture, but the combined build-process is non-trivial.  This repository will enforce a certain pattern for React component structure and deployment that will simplify the integration of components into the IoTF RTC project, while still providing a sandbox for rapid collaborative development.
+This repo is a template for custom card creation. Fork it to create your own custom cards. See the dashboard documentation to link your custo cards with a dashboard installation. https://pages.github.ibm.com/IoT/iotf-react/
 
 ## Running
 
@@ -13,32 +13,12 @@ Install dependencies
 Start build and watch
 `gulp`
 
-Install the example app
-`cd examples ; npm install`
+Run server
+`node app.js`
 
-Run the example application
-`npm run start`
+### Deployment
 
-Watch the output to get the PORT
-
-http://localhost:PORT
-
-## Developing new components
-
-### Summary (tl;dr)
-
-* Create a branch off **master**
-* Create a new folder in components/ with your exact component name (ex. components/MyComponent)
-* Build and export your component in components/MyComponent/MyComponent.jsx
-  * If it makes sense to require sub-components, put them either in subfolders of components/MyComponent/, or in components/common if they could be re-used in other contexts.
-  * If any CSS/LESS is required (on top of inline-styling), add this in components/MyComponent/MyComponent.less
-  * If any new external modules are required, add these in the package.json **browserify-shim** definition (not **dependencies**)
-  * NLS strings go in nls/react-modules/messages-en.json
-* Modify the **build-js** script in package.json to add an additional browserify command:
-  * `browserify -d ./components/MyComponent/MyComponent.jsx -o ./examples/public/js/MyComponent.js --standalone MyComponent`
-* Add your component to the sample application
-* Commit your code, issue a pull request back to master
-
-### Example
-
-TBD
+* change manifest.yml to match your environment
+* cf api https://api.ng.bluemix.net
+* cf login -u mielke@de.ibm.com -o markus.juettner@de.ibm.com -s IoTFDashboard (adapt user, org and space)
+* cf push manifest

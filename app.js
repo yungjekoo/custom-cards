@@ -13,6 +13,7 @@ var express = require('express');
 var cfenv = require('cfenv');
 var request = require('request');
 var https = require('https');
+var bodyParser = require('body-parser')
 
 // create a new express server
 var app = express();
@@ -32,18 +33,17 @@ var allowCrossDomain = function(req, res, next) {
 };
 
 app.use(allowCrossDomain);
-//app.use(bodyParser());
+app.use(bodyParser());
 
 // serve the files out of ./public as our main files
 app.use(express.static(__dirname + '/public'));
 
 // get the app environment from Cloud Foundry
 var appEnv = cfenv.getAppEnv();
-appEnv.port = 8008;
-
+var port = appEnv.port || 3000;
 // start server on the specified port and binding host
-app.listen(appEnv.port || 3000, function() {
+app.listen(port, function() {
 
     // print a message when the server starts listening
-  console.log("server starting on port " + appEnv.port);
+  console.log("server starting on port " + port);
 });

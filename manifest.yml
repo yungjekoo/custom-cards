@@ -1,0 +1,9 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: IoTFCommonDashboard
+  host: IoTFCommonDashboard
+  command: npm install && node app.js
+  disk_quota: 1024M
