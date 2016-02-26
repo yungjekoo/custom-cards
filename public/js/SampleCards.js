@@ -247,13 +247,237 @@ var HelloWorldStore = Reflux.createStore({
 module.exports = HelloWorldStore;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/Maintenance.jsx":[function(require,module,exports){
+'use strict';
+
+var Maintenance = {};
+Maintenance.Maintenance = require('./cards/Maintenance.jsx');
+Maintenance.MaintenanceStore = require('./stores/MaintenanceStore.js');
+
+module.exports = Maintenance;
+
+},{"./cards/Maintenance.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/cards/Maintenance.jsx","./stores/MaintenanceStore.js":"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/stores/MaintenanceStore.js"}],"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/cards/Maintenance.jsx":[function(require,module,exports){
+(function (global){
+'use strict';
+
+var React = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
+var IoTFCommon = (typeof window !== "undefined" ? window['IoTFCommon'] : typeof global !== "undefined" ? global['IoTFCommon'] : null);
+var LoadIndicator = IoTFCommon.LoadIndicator;
+var MaintenanceStore = require('../stores/MaintenanceStore.js');
+var Button = IoTFCommon.Button;
+var Label = IoTFCommon.Label;
+
+var RPT = React.PropTypes;
+
+var styles = {
+  container: {
+    width: "100%",
+    height: "100%",
+    padding: "20px"
+  }
+};
+
+var Maintenance = React.createClass({
+  displayName: 'Maintenance',
+
+  propTypes: {
+    theme: RPT.object.isRequired,
+    style: RPT.object,
+    nls: RPT.object,
+    wrapper: RPT.object,
+    height: RPT.string,
+    weight: RPT.string
+  },
+
+  getDefaultProps: function getDefaultProps() {
+    return {};
+  },
+
+  getInitialState: function getInitialState() {
+    return {};
+  },
+
+  componentDidMount: function componentDidMount() {
+    MaintenanceStore.listen(this.onUpdate);
+  },
+
+  onUpdate: function onUpdate(payload) {
+    if (this.isMounted()) {
+      if (payload.dashboards) {
+        var model = {};
+        if (payload.dashboards) {
+          model.dashboards = payload.dashboards;
+        }
+        this.setState(model);
+      }
+    }
+  },
+
+  onBackup: function onBackup() {
+    MaintenanceStore.Actions.backupDashboard();
+  },
+
+  onRestore: function onRestore() {
+    var button = document.getElementById("uploadButton");
+    button.click();
+  },
+
+  onUploadRestoreFile: function onUploadRestoreFile() {
+    var button = document.getElementById("uploadButton");
+    var files = button.files;
+    if (files && files.length > 0) {
+      var file = files[0];
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var content = e.target.result;
+        console.log(content);
+        MaintenanceStore.Actions.restoreDashboard({ content: content });
+      };
+      reader.readAsBinaryString(file);
+    }
+  },
+
+  onStartLogging: function onStartLogging() {
+    MaintenanceStore.Actions.startLogging();
+  },
+
+  onStopLogging: function onStopLogging() {
+    MaintenanceStore.Actions.stopLogging();
+  },
+
+  onDownloadLog: function onDownloadLog() {
+    MaintenanceStore.Actions.downloadLog();
+  },
+
+  render: function render() {
+    var self = this;
+
+    var style = Object.assign({}, styles.container, this.props.style ? this.props.style : {});
+
+    var backupButton = "";
+    if (this.state.dashboards) {
+      backupButton = React.createElement(Button, { key: 1, download: "DashboardBackup.json", onClick: function onClick() {
+          setTimeout(function () {
+            self.setState({ dashboards: null });
+          }, 1000);
+        }, target: "_blank", href: "data:text/json;charset=utf-8," + this.state.dashboards, text: "Download Backup" });
+    } else {
+      backupButton = React.createElement(Button, { key: 2, onClick: self.onBackup, text: "Generate Backup" });
+    }
+
+    return React.createElement(
+      'div',
+      { style: style },
+      React.createElement(
+        Label,
+        { label: "Dashboard", theme: this.props.theme },
+        backupButton,
+        React.createElement(Button, { onClick: self.onRestore, text: "Restore" }),
+        React.createElement('input', { id: 'uploadButton', onChange: this.onUploadRestoreFile, type: "file", style: { display: "none" } })
+      ),
+      React.createElement(
+        Label,
+        { label: "Logs", theme: this.props.theme },
+        React.createElement(Button, { onClick: self.onBackup, text: "Start log" }),
+        React.createElement(Button, { onClick: self.onRestore, text: "Stop log" }),
+        React.createElement(Button, { onClick: self.onBackup, text: "Download log" })
+      )
+    );
+  }
+});
+
+module.exports = Maintenance;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"../stores/MaintenanceStore.js":"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/stores/MaintenanceStore.js"}],"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/stores/MaintenanceStore.js":[function(require,module,exports){
+(function (global){
+'use strict';
+
+var Reflux = (typeof window !== "undefined" ? window['Reflux'] : typeof global !== "undefined" ? global['Reflux'] : null);
+var DashboardStore = IoTFComponents.Dashboard.DashboardStore;
+
+var Actions = Reflux.createActions(['backupDashboard', 'restoreDashboard', 'startLogging', 'stopLogging', 'downloadLog']);
+
+var MaintenanceStore = Reflux.createStore({
+
+  Actions: Actions,
+
+  init: function init() {
+    this.listenTo(Actions.backupDashboard, this.onBackupDashboard);
+    this.listenTo(Actions.restoreDashboard, this.onRestoreDashboard);
+    this.listenTo(Actions.startLogging, this.onStartLogging);
+    this.listenTo(Actions.stopLogging, this.onStopLogging);
+    this.listenTo(Actions.downloadLog, this.onDownloadLog);
+  },
+
+  onBackupDashboard: function onBackupDashboard() {
+    var dashboards = DashboardStore.dashboards;
+    var json = JSON.stringify(dashboards);
+
+    this.trigger({
+      dashboards: json
+    });
+  },
+
+  onRestoreDashboard: function onRestoreDashboard(payload) {
+    var ds = DashboardStore;
+    var content = payload.content;
+    try {
+      var obj = JSON.parse(content);
+      ds.dashboards = obj;
+
+      ds.cleanup();
+
+      var dashboard = ds.dashboards.dashboards[0];
+
+      var name = null;
+      if (!name && ds.dashboards.settings && ds.dashboards.settings.defaultDashboard) {
+        name = ds.dashboards.settings.defaultDashboard;
+      }
+
+      if (name) {
+        var temp = ds.getDashboardByName(name);
+        if (temp) {
+          dashboard = temp;
+        }
+      }
+
+      ds.dashboard = dashboard;
+
+      ds.trigger({ components: ds.getComponents(), dashboard: ds.dashboard });
+      ds.storeDashboard();
+    } catch (e) {
+      this.trigger({
+        error: "Restore failed"
+      });
+    }
+  },
+
+  onStartLogging: function onStartLogging() {
+    this.trigger({});
+  },
+
+  onStopLogging: function onStopLogging() {
+    this.trigger({});
+  },
+
+  onDownloadLog: function onDownloadLog() {
+    this.trigger({});
+  }
+
+});
+
+module.exports = MaintenanceStore;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],"/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx":[function(require,module,exports){
 'use strict';
 
 var Modules = {};
 Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
+Modules.Maintenance = require('./Maintenance/Maintenance.jsx');
 module.exports = Modules;
 
-},{"./HelloWorld/HelloWorld.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx"}]},{},["/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx")
+},{"./HelloWorld/HelloWorld.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx","./Maintenance/Maintenance.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/Maintenance/Maintenance.jsx"}]},{},["/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx")
 });
 //# sourceMappingURL=SampleCards.js.map

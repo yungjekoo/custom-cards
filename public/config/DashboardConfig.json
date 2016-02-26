@@ -9,7 +9,7 @@
       "displayName": "Remote HelloWorld",
       "description": "Example card with simple customization and store",
       "thumbnail" : "overview",
-      "category": "Remote cards",
+      "category": "Samples",
       "cardType": "NO_DATAPOINTS",
       "wrapper": "ReactWrapper",
       "sizes": [[2,3],[4,4]],
@@ -19,6 +19,21 @@
         "title": "Remote Hello World!"
       },
       "customization": "HelloWorldProperties"
+    },
+    {
+      "name": "Maintenance",
+      "displayName": "Maintenance tools",
+      "description": "Several tools to develop, fix and maintain the environment",
+      "thumbnail" : "overview",
+      "category": "Maintenance",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [[4,4]],
+      "module": "Maintenance",
+      "parameters" : {
+        "component": "Maintenance",
+        "title": "Maintenance"
+      }
     }
   ]
 }

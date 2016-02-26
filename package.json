@@ -67,7 +67,8 @@
     "./public/vendor/object-assign/index.js": "object-assign",
     "./public/vendor/eventemitter3/index.js": "eventemitter3",
     "./public/vendor/moment/moment.js": "moment",
-    "./examples/public/js/IoTCommon.js": "IoTFCommon",
+    "./public/vendor/iotp/IoTCommon.js": "IoTFCommon",
+    "./public/vendor/iotp/IoTComponents.js": "IoTComponents",
     "react": "global:React",
     "ReactDOM": "global:ReactDOM",
     "react-dom": "global:ReactDOM",
@@ -88,7 +89,7 @@
     "_": "global:_",
     "object-assign": "global:object-assign",
     "eventemitter3": "global:eventemitter3",
-    "iotfcomponents": "global:iotfcomponents",
+    "IoTComponents": "global:IoTComponents",
     "IoTFCommon": "global:IoTFCommon"
   },
   "scripts": {
