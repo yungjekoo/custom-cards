@@ -34,6 +34,21 @@
         "component": "Maintenance",
         "title": "Maintenance"
       }
+    },
+    {
+      "name": "VideoChat",
+      "displayName": "Service Chat",
+      "description": "Direct contact to our friendly support service",
+      "thumbnail" : "overview",
+      "category": "Maintenance",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [[4,4]],
+      "module": "Maintenance",
+      "parameters" : {
+        "component": "VideoChat",
+        "title": "Service Chat"
+      }
     }
   ]
 }
