@@ -1,12 +1,15 @@
 var Reflux = require('reflux');
 var DashboardStore = IoTFComponents.Dashboard.DashboardStore;
+var IoTFDeviceStore = IoTFCommon.IoTFDeviceStore;
 
 var Actions = Reflux.createActions([
   'backupDashboard',
   'restoreDashboard',
   'startLogging',
   'stopLogging',
-  'downloadLog'
+  'downloadLog',
+  'observeMessages',
+  'stopObservingMessages'
 ]);
 
 var MaintenanceStore = Reflux.createStore({
@@ -19,6 +22,8 @@ var MaintenanceStore = Reflux.createStore({
     this.listenTo(Actions.startLogging, this.onStartLogging);
     this.listenTo(Actions.stopLogging, this.onStopLogging);
     this.listenTo(Actions.downloadLog, this.onDownloadLog);
+    this.listenTo(Actions.observeMessages, this.onObserveMessages);
+    this.listenTo(Actions.stopObservingMessages, this.onStopObservingMessages);
   },
 
   onBackupDashboard: function() {
@@ -62,6 +67,22 @@ var MaintenanceStore = Reflux.createStore({
         error: "Restore failed"
       });
     }
+  },
+
+  onObserveMessages: function() {
+    var self = this;
+    IoTFDeviceStore.setMessageObserver(function(device, event, data, timestamp) {
+      self.trigger({message: {
+        device: device,
+        event: event,
+        data: data,
+        timestamp: timestamp
+      }})
+    });
+  },
+
+  onStopObservingMessages: function() {
+    IoTFDeviceStore.setMessageObserver(null);
   },
 
   onStartLogging: function() {

@@ -37,7 +37,7 @@
     },
     {
       "name": "VideoChat",
-      "displayName": "Service Chat",
+      "displayName": "Service chat",
       "description": "Direct contact to our friendly support service",
       "thumbnail" : "overview",
       "category": "Maintenance",
@@ -48,6 +48,21 @@
       "parameters" : {
         "component": "VideoChat",
         "title": "Service Chat"
+      }
+    },
+    {
+      "name": "MessageViewer",
+      "displayName": "Device message viewer",
+      "description": "Show live messages of your devices",
+      "thumbnail" : "overview",
+      "category": "Maintenance",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [[3,2],[3,3],[3,4]],
+      "module": "Maintenance",
+      "parameters" : {
+        "component": "MessageViewer",
+        "title": "Message viewer"
       }
     }
   ]
