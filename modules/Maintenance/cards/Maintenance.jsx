@@ -48,6 +48,11 @@ var Maintenance = React.createClass({
         }
         this.setState(model);
       }
+      if (payload.fullLog) {
+        this.setState({
+          log: payload.fullLog
+        })
+      }
     }
   },
 
@@ -83,10 +88,6 @@ var Maintenance = React.createClass({
     MaintenanceStore.Actions.stopLogging();
   },
 
-  onDownloadLog: function() {
-    MaintenanceStore.Actions.downloadLog();
-  },
-
   render: function() {
   	var self = this;
 
@@ -99,6 +100,13 @@ var Maintenance = React.createClass({
       backupButton = <Button key={2} onClick={self.onBackup} text={"Generate Backup"}></Button>
     }
 
+    var downloadButton = "";
+    if (this.state.log) {
+      downloadButton = <Button key={1} download={"DashboardLog.txt"} onClick={function() {setTimeout(function() {self.setState({log: null})}, 1000)}} target={"_blank"} href={"data:text;charset=utf-8," + this.state.log} text={"Download Log"}></Button>
+    } else {
+      downloadButton = <Button key={2} onClick={self.onStopLogging} text={"Stop Log"}></Button>
+    }
+
     return (
       <div style={style}>
         <Label label={"Dashboard"} theme={this.props.theme}>
@@ -107,9 +115,8 @@ var Maintenance = React.createClass({
           <input id="uploadButton" onChange={this.onUploadRestoreFile} type={"file"} style={{display: "none"}}/>
         </Label>
         <Label label={"Logs"} theme={this.props.theme}>
-          <Button onClick={self.onBackup} text={"Start log"}></Button>
-          <Button onClick={self.onRestore} text={"Stop log"}></Button>
-          <Button onClick={self.onBackup} text={"Download log"}></Button>
+          <Button onClick={self.onStartLogging} text={"Start log"}></Button>
+          {downloadButton}
         </Label>
 
       </div>
