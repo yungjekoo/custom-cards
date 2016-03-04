@@ -5,22 +5,6 @@
 
   "components": [
     {
-      "name": "MyRemoteHelloWorld",
-      "displayName": "Remote HelloWorld",
-      "description": "Example card with simple customization and store",
-      "thumbnail" : "overview",
-      "category": "Samples",
-      "cardType": "NO_DATAPOINTS",
-      "wrapper": "ReactWrapper",
-      "sizes": [[2,3],[4,4]],
-      "module": "HelloWorld",
-      "parameters" : {
-        "component": "HelloWorld",
-        "title": "Remote Hello World!"
-      },
-      "customization": "HelloWorldProperties"
-    },
-    {
       "name": "Maintenance",
       "displayName": "Maintenance tools",
       "description": "Several tools to develop, fix and maintain the environment",
@@ -94,6 +78,75 @@
         "component": "LogViewer",
         "title": "Log viewer"
       }
+    },
+
+    {
+      "name": "Elevator",
+      "displayName": "Elevator Demo",
+      "description": "Animated elevator card to show floor, weight and height in one card.",
+      "thumbnail" : "elevator",
+      "category": "Custom",
+      "cardType": "SPECIFIC",
+      "wrapper": "ReactWrapper",
+      "sizes": [[2,4],[2,6],[2,8]],
+      "module": "ElevatorDemo",
+      "parameters" : {
+        "component": "Elevator",
+        "title": "Elevator",
+        "floor": "location.floor",
+        "height": "location.height",
+        "weight": "weight.value"
+      },
+      "customization": "ElevatorProperties"
+    },
+    {
+      "name": "WeatherService",
+      "displayName": "Weather Service",
+      "description": "Shows weather information from The Weather Channel",
+      "thumbnail" : "weatherService",
+      "category": "Custom",
+      "cardType": "EVENT_ONLY",
+      "wrapper": "ReactWrapper",
+      "sizes": [[2,2],[3,3],[4,2],[4,4],[4,5]],
+      "module": "WeatherService",
+      "parameters" : {
+        "component": "WeatherService",
+        "location": "Rottenburg",
+        "title": "Weather Service"
+      },
+      "customization": "WeatherServiceProperties"
+    },
+    {
+      "name": "Runtastic",
+      "displayName": "Runtastic last run",
+      "description": "Shows statistics of my last run",
+      "thumbnail" : "sport",
+      "category": "Custom",
+      "cardType": "EVENT_ONLY",
+      "wrapper": "ReactWrapper",
+      "sizes": [[2,3],[4,4]],
+      "module": "Runtastic",
+      "parameters" : {
+        "component": "Runtastic",
+        "title": "Runtastic"
+      }
+    },
+    {
+      "name": "ToggleGroup",
+      "displayName": "Toggle group",
+      "description": "Shows a group of binary values",
+      "thumbnail" : "radio-button-on",
+      "category": "Custom",
+      "cardType": "",
+      "wrapper": "ReactWrapper",
+      "sizes": [[2,2],[3,2],[3,4],[4,2],[4,4],[4,5]],
+      "module": "ToggleGroup",
+      "parameters" : {
+        "component": "ToggleGroup",
+        "title": "Toggle group"
+      },
+      "customization": "ToggleGroupProperties"
     }
+
   ]
 }
