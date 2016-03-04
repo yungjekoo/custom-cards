@@ -1,4 +1,54 @@
-(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.SampleCards = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx":[function(require,module,exports){
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.CustomCards = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/frank/Documents/Projects/CustomCards/modules/EmptyCard/EmptyCard.jsx":[function(require,module,exports){
+'use strict';
+
+var EmptyCard = {};
+EmptyCard.EmptyCard = require('./cards/EmptyCard.jsx');
+
+module.exports = EmptyCard;
+
+},{"./cards/EmptyCard.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/EmptyCard/cards/EmptyCard.jsx"}],"/Users/frank/Documents/Projects/CustomCards/modules/EmptyCard/cards/EmptyCard.jsx":[function(require,module,exports){
+(function (global){
+'use strict';
+
+var React = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
+var IoTFCommon = (typeof window !== "undefined" ? window['IoTFCommon'] : typeof global !== "undefined" ? global['IoTFCommon'] : null);
+
+var RPT = React.PropTypes;
+
+var styles = {
+  container: {
+    width: "100%",
+    height: "100%",
+    fontSize: "20px",
+    padding: "20px"
+  }
+};
+
+var EmptyCard = React.createClass({
+  displayName: 'EmptyCard',
+
+  propTypes: {
+    theme: RPT.object.isRequired,
+    style: RPT.object,
+    nls: RPT.object,
+    wrapper: RPT.object,
+    height: RPT.string,
+    weight: RPT.string
+  },
+
+  render: function render() {
+    return React.createElement(
+      'div',
+      { style: styles.container },
+      'Hello World!'
+    );
+  }
+});
+
+module.exports = EmptyCard;
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx":[function(require,module,exports){
 'use strict';
 
 var HelloWorld = {};
@@ -252,8 +302,9 @@ module.exports = HelloWorldStore;
 
 var Modules = {};
 Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
+Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
 module.exports = Modules;
 
-},{"./HelloWorld/HelloWorld.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx"}]},{},["/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx")
+},{"./EmptyCard/EmptyCard.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/EmptyCard/EmptyCard.jsx","./HelloWorld/HelloWorld.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx"}]},{},["/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx")
 });
-//# sourceMappingURL=SampleCards.js.map
+//# sourceMappingURL=CustomCards.js.map

@@ -1,6 +1,6 @@
 {
   "settings": {
-    "packageName": "SampleCards"
+    "packageName": "CustomCards"
   },
 
   "components": [
@@ -19,6 +19,21 @@
         "title": "Hello World!"
       },
       "customization": "HelloWorldProperties"
+    },
+    {
+      "name": "EmptyCard",
+      "displayName": "Empty card",
+      "description": "Plain card as a starting point for your development",
+      "thumbnail" : "overview",
+      "category": "Samples",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [[2,2],[3,3],[4,4]],
+      "module": "EmptyCard",
+      "parameters" : {
+        "component": "EmptyCard",
+        "title": "Empty card!"
+      }
     }
   ]
 }

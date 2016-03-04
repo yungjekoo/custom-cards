@@ -1,7 +1,7 @@
 //****************************************
 // Enter external name of the package here
 
-var packageName = 'SampleCards';
+var packageName = 'CustomCards';
 
 //****************************************
 
