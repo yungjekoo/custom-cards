@@ -1,5 +1,143 @@
-.helloWorld {
-  border: 1px solid blue;
-  padding: 10px;
-  background-color: white;
+.shWeatherForecastTable {
+  border-collapse: collapsed;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.shWeatherForecastIcon {
+  width: 70px;
+}
+.shWeatherForecastHeader {
+  color: silver;
+}
+.shWeatherForecastHigh {
+  color: #2E3636;
+  font-size: 25px;
+}
+.shWeatherForecastLow {
+  color: #899399;
+  font-size: 15px;
+}
+.shWeatherForecastTable TD {
+  padding: 3px;
+  width: 100px;
+  text-align: center;
+}
+.shWeatherTodayTable {
+  border-collapse: collapsed;
+  width: 90%;
+  margin: 0% 2.5%;
+}
+.shWeatherToday TD {
+  padding: 3px;
+  text-align: center;
+}
+.shWeatherTodayIcon {
+  width: 110px;
+}
+.shCollapsedContent .shWeatherTodayIcon {
+  width: 35px;
+  height: 35px;
+}
+.shWeatherTodayValue {
+  color: #2E3636;
+  text-align: right;
+  font-size: 70px;
+  font-weight: 200;
+}
+.shWeatherTodayTable TR {
+  height: 36px;
+}
+.shWeatherTodayCity {
+  color: #2E3636;
+}
+.shWeatherSmallTable {
+  width: 100%;
+  height: 100%;
+}
+.shWeatherSmallIcon {
+  width: 80px;
+  margin-left: 30px;
+}
+.shWeatherSmallValue {
+  color: #2E3636;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 15px;
+}
+.shWeatherSmallHighLow {
+  color: #899399;
+  font-size: 16px;
+}
+.shWeatherForecastTableSmall {
+  border-collapse: collapsed;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+.shWeatherForecastBaseTabel {
+  width: 100%;
+}
+.shWeatherForecastTableSmall .shWeatherForecastHeader {
+  font-size: 15px;
+}
+.shWeatherForecastTableSmall .shWeatherForecastHigh {
+  font-size: 40px;
+  font-weight: 200;
+}
+.shWeatherDetailsTable {
+  border-collapse: collapsed;
+  width: 100%;
+  margin-top: 20px;
+}
+.shWeatherDetailsIcon {
+  width: 40px;
+}
+.shWeatherDetailsValue {
+  color: #2E3636;
+  font-size: 15px;
+  text-align: left;
+}
+.shWeatherDetailsSide {
+  width: 90px;
+}
+.shWeatherDetailsIconCell {
+  padding: 0px 10px;
+}
+.shWeatherSideTable SPAN {
+  color: silver;
+}
+.shWeatherSideTable TD {
+  padding: 10px 0px;
+  text-align: center;
+}
+/**
+* Widescreen weather
+*/
+.shWeatherWidescreen {
+  border-collapse: collapse;
+  height: 100px;
+  margin: 10px;
+}
+.shWeatherWidescreen .shWeatherForecastTable {
+  margin-top: 0px;
+}
+.shWeatherWidescreen .shWeatherForecastTable TD {
+  padding: 0px 3px;
+  font-size: 16px;
+}
+.shWeatherWidescreen .shWeatherTodayIcon {
+  width: 65px;
+  margin-left: 20px;
+}
+.shWeatherWidescreen .shWeatherTodayValue {
+  font-size: 60px;
+  padding: 0px 15px;
+  font-weight: 200;
+}
+.shWeatherWidescreen .shWeatherTodayTable TR {
+  height: 25px;
+}
+.shWeatherWidescreen .shWeatherForecastIcon {
+  width: 35px;
 }
