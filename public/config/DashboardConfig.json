@@ -6,6 +6,7 @@
   "components": [
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
       "name": "HelloWorld",
       "displayName": "HelloWorld",
       "description": "Example card with simple customization and store",
@@ -21,6 +22,8 @@
       },
       "customization": "HelloWorldProperties"
 =======
+=======
+>>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
       "name": "Maintenance",
       "displayName": "Maintenance tools",
       "description": "Several tools to develop, fix and maintain the environment",
@@ -162,6 +165,9 @@
         "title": "Toggle group"
       },
       "customization": "ToggleGroupProperties"
+<<<<<<< HEAD
+>>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
+=======
 >>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
     }
 

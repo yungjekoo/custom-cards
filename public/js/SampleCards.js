@@ -539,6 +539,7 @@ var ElevatorProperties = React.createClass({
 });
 
 module.exports = ElevatorProperties;
+<<<<<<< HEAD
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 <<<<<<< HEAD
@@ -551,6 +552,10 @@ module.exports = Modules;
 
 },{"./HelloWorld/HelloWorld.jsx":"/Users/frank/Documents/Projects/CustomCards/modules/HelloWorld/HelloWorld.jsx"}]},{},["/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/CustomCards/modules/Modules.jsx")
 =======
+=======
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+>>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
 },{}],"/Users/frank/Documents/Projects/SampleCards/modules/Maintenance/Maintenance.jsx":[function(require,module,exports){
 'use strict';
 
@@ -2402,6 +2407,9 @@ module.exports = WeatherServiceProperties;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}]},{},["/Users/frank/Documents/Projects/SampleCards/modules/Modules.jsx"])("/Users/frank/Documents/Projects/SampleCards/modules/Modules.jsx")
+<<<<<<< HEAD
+>>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
+=======
 >>>>>>> 8f970781483479696b9ad1a17e61a7dd2832d4f6
 });
 //# sourceMappingURL=SampleCards.js.map
