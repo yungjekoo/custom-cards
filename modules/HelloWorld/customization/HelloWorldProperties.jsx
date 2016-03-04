@@ -1,9 +1,9 @@
 var React = require('react');
 var IoTFCommon = require('IoTFCommon');
-
 var RPT = React.PropTypes;
 var InputField = IoTFCommon.InputField;
 var Label = IoTFCommon.Label;
+var ColorSelection = IoTFCommon.ColorSelection;
 
 var styles = {
   container: {
@@ -12,13 +12,12 @@ var styles = {
   table: {
     width: "100%"
   }
-
 }
 
-var WeatherServiceProperties = React.createClass({
+var HelloWorldProperties = React.createClass({
 
   propTypes: {
-    location: RPT.string,
+    helloColor: RPT.string,
     nls: RPT.object,
     style: RPT.object,
     theme: RPT.object.isRequired
@@ -26,19 +25,19 @@ var WeatherServiceProperties = React.createClass({
 
   getDefaultProps: function() {
     return {
-      location: "Rottenburg"
+      helloColor: 0
     };
   },
 
   getInitialState: function() {
     return {
-      location: this.props.location
+      helloColor: this.props.helloColor
     }
   },
 
-  onLocationChanged: function(value) {
+  onColorChanged: function(value) {
     this.setState({
-      location: value
+      helloColor: value
     })
   },
 
@@ -57,9 +56,9 @@ var WeatherServiceProperties = React.createClass({
                   <tbody>
                     <tr>
                       <td colSpan="2">
-                        <Label label='Location' theme={this.props.theme}>
-			                <InputField theme={this.props.theme} onChange={this.onLocationChanged} initialValue={this.state.location}></InputField>
-                        </Label>
+			            <Label label={this.props.nls.resolve('ColorScheme')} theme={this.props.theme}>
+			                <ColorSelection theme={this.props.theme} onChange={this.onColorChanged} initialSelection={this.state.helloColor}></ColorSelection>
+			            </Label>
                       </td>
                     </tr>
                   </tbody>
@@ -77,4 +76,4 @@ var WeatherServiceProperties = React.createClass({
 
 
 
-module.exports = WeatherServiceProperties;
+module.exports = HelloWorldProperties;

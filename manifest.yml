@@ -3,7 +3,7 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: SampleCards
-  host: SampleCards
+  name: CustomCards
+  host: CustomCards
   command: npm install && node app.js
   disk_quota: 1024M
