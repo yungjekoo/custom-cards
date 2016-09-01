@@ -3,7 +3,7 @@ Template for custom card creation
 
 ## Background
 
-This repo is a template for custom card creation. Fork it to create your own custom cards. See the dashboard documentation to link your custo cards with a dashboard installation. https://pages.github.ibm.com/Watson-IoT/platform-ui-components
+This repo is a template for custom card creation. Fork it to create your own custom cards. See the dashboard documentation to link your custo cards with a dashboard installation. [See documentation here](https://pages.github.ibm.com/Watson-IoT/platform-ui-components/dashboard/ch1-develop/getting_started_hotplug.html)
 
 ## Running
 
