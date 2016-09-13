@@ -1,4 +1,6 @@
-# iotf-react
+# Creating custom cards for IBM Watson IoT Platform
+
+iotf-react
 Template for custom card creation
 
 ## Background
