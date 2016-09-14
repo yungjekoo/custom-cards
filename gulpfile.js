@@ -126,17 +126,6 @@ gulp.task('compress-js',['build-js'], function() {
     .pipe(gulp.dest('public/js'));
 });
 
-gulp.task('compress-ol', function() {
-  return gulp.src('public/vendor/openlayers/ol.js')
-     .pipe(sourcemaps.init())
-    .pipe(uglify())
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('public/vendor/openlayers'));
-});
-
 gulp.task('watch', function() {
   gulp.watch(sources + '.js', ['rebundle-js']);
   gulp.watch(sources + '.jsx', ['rebundle-js']);

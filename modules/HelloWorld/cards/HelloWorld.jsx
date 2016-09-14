@@ -94,7 +94,7 @@ var HelloWorld = React.createClass({
       style = Object.assign(style, {color: this.props.theme.schemes[this.props.helloColor].normal});
 
       if (this.props.wrapper.width > 2) {
-      	style = Object.assign(style, {backgroundImage: "url('http://www.spyderonlines.com/images/wallpapers/cat-wallpaper-free/cat-wallpaper-free-9.jpg')"});
+      	style = Object.assign(style, {backgroundImage: 'url("http://t.wallpaperweb.org/wallpaper/animals/1600x1200/Curious_Tabby_Kitten.jpg")'});
       }
 
       return (
