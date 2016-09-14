@@ -28,8 +28,8 @@ node_modules
 
 examples/public/js/IoTFComponents.js
 examples/public/js/IoTFComponents.min.js
-examples/public/js/maps
 examples/public/css/IoTFComponents.css
+examples/public/js/maps
 examples/public/nls
 _book/
 examples/public/vendor-app/angular.min.js
