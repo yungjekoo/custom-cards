@@ -1,88 +1,95 @@
 # Creating custom cards for IBM Watson IoT Platform
 
-iotf-react
-Template for custom card creation
+Use your own custom cards with Watson IoT Platform to visualize your IoT data beyond the generic cards.
 
 ## Background
 
-This repo is a template for custom card creation. Fork it to create your own custom cards. See the dashboard documentation to link your custo cards with a dashboard installation. [See documentation here](https://pages.github.ibm.com/Watson-IoT/platform-ui-components/dashboard/ch1-develop/getting_started_hotplug.html)
+This repository is a template that you can use to start your custom card creation. You can fork the repository, copy  and modify the sample cards, deploy your cards to a custom cards HTTP server, and then connect to that server from Watson IoT Platfrom to use your custom cards together with the default IoT Platform cards.
 
-## Running
+Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 
-Install dependencies
-`npm install`
-
-Start build and watch
-`gulp`
-
-Run server
-`node app.js`
-
-### Deployment
-
-* change manifest.yml to match your environment
-* cf api https://api.ng.bluemix.net
-* cf login -u mielke@de.ibm.com -o markus.juettner@de.ibm.com -s IoTFDashboard (adapt user, org and space)
-* cf push manifest
+> See the dashboard documentation to link your custo cards with a dashboard installation. [See documentation here](https://pages.github.ibm.com/Watson-IoT/platform-ui-components/dashboard/ch1-develop/getting_started_hotplug.html)
 
 
-# Before you begin
-Requirements:
+
+> ### Deployment
+
+> * change manifest.yml to match your environment
+> * cf api https://api.ng.bluemix.net
+> * cf login -u mielke@de.ibm.com -o markus.juettner@de.ibm.com -s IoTFDashboard (adapt user, org and space)
+> * cf push manifest
+
+
+## Before you begin
+
+Make sure that your local development environment meets the following requirements:
 - nodejs
 - npm
 - ...
 
-# Getting started - Custom card hot plug
+Also, you must set up an HTTP server to host your custom cards package.
+- The server must use the HTTPS protocol
+- More Requirements
 
-The new way to publish custom cards is the hot plug. You do no longer have to touch the IoTP core code. You do not even have to fork the IoTP repository since you develop your cards in a separate repository.
+For information about how secure your custom cards server, see Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 
-Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 
-Developing new cards for the dashboard with the hot plug mechanism is easy. You do not have to start from scratch since there is a custom card repository which serves as template for your developement. Just use this existing repo and the HelloWorld sample card to get your own card live in only a few minutes. The HelloWorld card already contains most interesting aspects of a card which can just be reused and enhanced for your needs.
+## Getting started
 
-Follow these steps to create a new card based on the HelloWorld card in the template repo:
+Developing new cards for the dashboard with the custom-cards samples is easy. You can use this repository and the HelloWorld sample card to get up and running in just a few minutes.
+
+The HelloWorld card already contains most interesting aspects of a card which can just be reused and enhanced for your needs. For example:
+- List of aspect 1
+- List of aspect 2
+- ...
+
+To create a new card based on the HelloWorld card:
 
 ## Step 1: Create your own repository
 
 1. Locate the template repository at https://github.ibm.com/IoT/custom-cards
-2. Fork the repo to create your own copy.
- The button to fork is in the upper right corner of the Web UI.
+2. Fork the repository to create your own copy.
 3. Clone your repository in your local environment.  
-This step depends on the git client you are using.
+The exact process for this step depends on the git client that you are using.
 
-## Step 2: Create your own module and card
+## Step 2: Create your own module and card framework
 
-Custom cards are organized in modules. The repo might contain multiple modules. Locate the HelloWorld module in
-`/modules/HelloWorld`. Use this module as your template.
+Custom cards are organized in modules. The sample repository contains two samples: EmptyCard and HelloWorld.
 
-1. Copy the folder into the same directory and change the name to your new card name, e.g.
-`/modules/MyCard`
-2. Change all the file names in your module to something with `MyCard`instead of `HelloWorld`.  
- **Tip:** You can also use a global change in all files in the `MyCard` module folder to change all occurences at once.  
+1. Locate the HelloWorld module in`/modules/HelloWorld`.  
+Use this module as your template.
+2. Duplicate the HelloWorld folder into the modules directory and change the name to your new card name: For example: `/modules/MyCard`
+3. Update all instances of HelloWorld in file names and file content.  
+For example, change all occurrences of `HelloWorld`to `MyCard`.
+ **Tip:** You can use a global find and replace in all files in the `MyCard` module folder to change all occurrences at the same time.  
 
 File | Change
 --- | ---
-`MyCard/cards/MyCard.jsx`| Change all occurrences of `HelloWorld`to `MyCard`. This is your React card component.  
-`MyCard/customization/MyCardProperties.jsx`| Change all occurrences of `HelloWorld`to`MyCard`. This is the customization plugin.
-`MyCard/stores/MyCardStore.js`| Change all occurrences of `HelloWorld`to `MyCard`. This is the DataStore to deliver new data to the card.
-`MyCard/MyCard.jsx`| Change all occurrences of `HelloWorld`to `MyCard`. This is the main module file. It references all other components of you module. If you add additional files, e.g. your module contains multiple cards, you must reference them here.
+`MyCard/cards/MyCard.jsx`| This is your React card component.  
+`MyCard/customization/MyCardProperties.jsx`| This is the customization plugin.
+`MyCard/stores/MyCardStore.js`| This is the DataStore to deliver new data to the card.
+`MyCard/MyCard.jsx`| This is the main module file. It references all other components of you module. If you add additional files, e.g. your module contains multiple cards, you must reference them here.
+`MyCard/MyCard.less` | If you need CSS styles, add them to the `MyCard/MyCard.less` file in the same folder.
 
-If you need css styles, add them to `MyCard/MyCard.less` in the same folder.
-Your custom card package can contain multiple modules. You must reference your new module in the main package file. The file `modules/Modules.jsx`contains the references to all main module files. Add a line `Modules.MyCard = require('./MyCard/MyCard.jsx')`.
+## Step 3. Reference the new card
+Your custom card package might contain multiple modules. You must reference your new module in the main package file. The file `modules/Modules.jsx`contains the references to all main module files. Add a line `Modules.MyCard = require('./MyCard/MyCard.jsx')`.  
+
 There is also a `.less`file in the same folder. If you have changed the `MyCard.less` file in your module, you can reference it here.
 
 Now you have prepared the code of your module. It can now be used as `MyCard`in the dashboard. Before you can do this, you must make it known to the dashboard.
 
-## Step 3: Register your module
-The available cards in the dashboard are configured in the central `DashboardConfig.json` file. You package contains a snippet of this configuration which will be included into the main configuration file.
-1. Go to `public/config/DashboardConfig.json`. This is the configuration snippet for your package. It defines what cards your package provides.
-2. Find the entry for `HelloWorld` and duplicate it.
-3. Change all occurrences of `HelloWorld` to `MyCard` in the new entry.
-4. Also change the value of `category`in this entry.  
-Specify a new category to easily find your new cards in the card gallery.
-5. Also specify a new title for the card so that you can see a difference to the `HelloWorld` card.  
-Remember that we did not change any functionality so far.  
-**Important:** Do not forget any trailing commas when you make changes to the configuration.
+## Step 4: Register your module
+To make your card available in the Watson IoT Platform boards you must include the card configuration details in the `DashboardConfig.json` file. You package contains a snippet of this configuration which will be included into the main configuration file.
+1. Go to `public/config/DashboardConfig.json`.  
+This is the configuration snippet for your package. It defines what cards your package provides.
+2. Find and duplicate the entry for `HelloWorld`.
+3. In the new entry, change all occurrences of `HelloWorld` to `MyCard`.
+4. Assign a category for your module.
+The category specifies where in the Watson IoT Platform card gallery a new card is located.
+Specify a new or existing value for the `category` entry.  
+5. Specify a title for the card. The `title` entry sets the title that the card will use in Watson IoT Platform.  
+
+**Important:** Do not forget any trailing commas when you make changes to the configuration. Make sure that the file content is well formatted JSON.
 
 ```
     {
@@ -122,24 +129,37 @@ The icon to use for your card. The default is `overview` which is a flag.
 - customization
 
 
+## Step 4: Build your card package
 
-## Step 4: Build your package
-1. Open a console and navigate to the root directory of your repo.
+To build the card package that you will deploy to the custom card server:
+1. Open a console and navigate to the root directory of your repository.
 2. Run `npm install`
 3. Run `gulp`.  
-This will build your package every time you make a change to it. **Tip:** You will notice the a rebuild will only probably take 0.1 seconds.  
+Gulp builds your package every time you make a change to it.  
+**Tip:** After the first build, a gulp rebuild usually takes on the order of less than a second to complete.   
 If you see errors, they should be pretty clear, indicating the line number where you have to change something. Fix it!
-4. Open a new console window and navigate to the same directory.
-5. Run `node app`.  
-This is your server for the custom cards package. Your cards are only available when the server is up and running. For card development, it is fine if you run your server locally. For test or production, you must make your package available in the Web, e.g. using Bluemix.
 
-## Step 5: Link your package
-You can now link your new card package to any running instance of the dashboard. This can be the sample application of the iotf-react repository as well as a test server or the public environment.
-1. Log in to Watson IoT Platform dashboard as an administrative user.
+## Step 5: Upload your card package
+
+To upload the card package:
+1. Optional: Start your local http server
+ 1. Open a new console window to the same directory.
+ 2. Run `node app`.  
+This starts a local HTTP server for the custom cards package.  
+**Important:** Your cards are only available when the local server is up and running. For card development, it is fine if you run your server locally. For more stringent testing and for production you should deploy your custom cards package to an HTTP server that is available on the web.
+2. Upload the `custom-cards\public` folder to your web server, and make sure you can access it at: URL
+
+> This is where we need some specific information... How and what to upload to the HTTPS server. Also, is there anything specific the user has to do when running a local server to make it accessible to Iot Platform on Bluemix? What URL should they use for example?
+
+## Step 6: Link your package
+You can now link your new card package to Watson IoT Platform.  
+
+To link the custom cards server:
+1. Log in to the Watson IoT Platform dashboard as a user with administrative rights.
 2. Connect to the sample server.
- 2. Go to **Settings > Extensions**.
- 3. Click **Add extension** and select the Custom Card Hot Plug extension.
- 4. In the extensions dashboard, click the **Custom Card Hot Plug** tile to edit the settings.
+ 2. Go to **Extensions**.
+ 3. Click **Add extension** and select the Custom Card extension.
+ 4. In the extensions dashboard, click **Setup** on the custom cards tile to edit the settings.
  5. In the Configure Custom Cards dialog server field, enter the URL for the external card server.  
 **Note:** The URL should start with https.  
 The URL of the public sample card server is: https://samplecards.mybluemix.net
@@ -158,7 +178,7 @@ If you are connecting to your own server, enter the URL of that server.
 - Now you can change your first new card step by step to adapt it to your needs. The automated build will rebuild your package every time you make a change and the changes will immediately be available after a browser refresh.
 - Congratulations!
 
-## Step 6: Clean up
+## Step 7: Clean up
 Your repo still contains multiple modules and cards. They can serve as a source for inspiration since they cover different aspects. You can also remove the modules if you do not need them.
 Remove the folder of the module
 Remove the entry in `DashboardConfig.json`
