@@ -25,12 +25,6 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-
-examples/public/js/IoTFComponents.js
-examples/public/js/IoTFComponents.min.js
-examples/public/css/IoTFComponents.css
-examples/public/js/maps
-examples/public/nls
-_book/
-examples/public/vendor-app/angular.min.js
-examples/public/vendor-app/maps/angular.min.js.map
+public/css
+public/js
+public/resources
