@@ -8,7 +8,6 @@ This repository is a template that you can use to start your custom card creatio
 
 Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 
-> See the dashboard documentation to link your custo cards with a dashboard installation. [See documentation here](https://pages.github.ibm.com/Watson-IoT/platform-ui-components/dashboard/ch1-develop/getting_started_hotplug.html)
 
 
 
