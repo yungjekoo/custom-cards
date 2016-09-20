@@ -1,18 +1,15 @@
 # Creating custom cards for IBM Watson IoT Platform
 
-Use your own custom cards with Watson IoT Platform to visualize your IoT data beyond the generic cards.
+IBM Watson IoT Platform provides a default set of cards that you can use to display your device data on your Watson IoT Platform boards. In addition to these cards you can create and deploy your own custom cards to a card server that is then linked to your Watson IoT Platform organization.
+Use custom cards to display your device data the way you want to see it. Start your exploration with our sample HelloWorld card, and then create your own masterpiece.
 
-## Background
+## Overview
 
-This repository is a template that you can use to start your custom card creation. You can fork the repository, copy  and modify the sample cards, deploy your cards to a custom cards HTTP server, and then connect to that server from Watson IoT Platfrom to use your custom cards together with the default IoT Platform cards.
+The custom-cards repository is a template from which you can start your custom card creation by forking the repository to your own environment, then copying and modifying the sample cards to suit your needs. You then deploy your cards to your own custom cards HTTP server, and then connect to that server from Watson IoT Platform. Once connected, the cards in your custom cards server can be used seamlessly with the default IoT Platform cards.
 
 Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 
-> See the dashboard documentation to link your custo cards with a dashboard installation. [See documentation here](https://pages.github.ibm.com/Watson-IoT/platform-ui-components/dashboard/ch1-develop/getting_started_hotplug.html)
-
-
-
-> ### Deployment
+> ### Deployment <- Not sure where this fits?
 
 > * change manifest.yml to match your environment
 > * cf api https://api.ng.bluemix.net
@@ -23,15 +20,16 @@ Learn more about custom cards in the [IBM Watson IoT Platform documentation](htt
 ## Before you begin
 
 Make sure that your local development environment meets the following requirements:
-- nodejs
-- npm
+- Node.js with NPM
+For information about installing Node.js, including the download links, go here: https://nodejs.org
 - ...
 
 Also, you must set up an HTTP server to host your custom cards package.
-- The server must use the HTTPS protocol
+- The server must use the HTTPS protocol.
 - More Requirements
+- ...
 
-For information about how secure your custom cards server, see Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
+For information about how secure your custom cards server, see [Learn more about custom cards](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html) IBM Watson IoT Platform documentation.
 
 
 ## Getting started
@@ -42,6 +40,8 @@ The HelloWorld card already contains most interesting aspects of a card which ca
 - List of aspect 1
 - List of aspect 2
 - ...
+
+[Image here]
 
 To create a new card based on the HelloWorld card:
 
@@ -79,7 +79,8 @@ There is also a `.less`file in the same folder. If you have changed the `MyCard.
 Now you have prepared the code of your module. It can now be used as `MyCard`in the dashboard. Before you can do this, you must make it known to the dashboard.
 
 ## Step 4: Register your module
-To make your card available in the Watson IoT Platform boards you must include the card configuration details in the `DashboardConfig.json` file. You package contains a snippet of this configuration which will be included into the main configuration file.
+To make your card available in the boards of your Watson IoT Platform organizaton you must include the card configuration details in the `DashboardConfig.json` file. You package contains a snippet of this configuration which will be included into the main configuration file.
+
 1. Go to `public/config/DashboardConfig.json`.  
 This is the configuration snippet for your package. It defines what cards your package provides.
 2. Find and duplicate the entry for `HelloWorld`.
@@ -132,24 +133,28 @@ The icon to use for your card. The default is `overview` which is a flag.
 ## Step 4: Build your card package
 
 To build the card package that you will deploy to the custom card server:
-1. Open a console and navigate to the root directory of your repository.
+1. Open a console and navigate to the root directory of your repository.  
+For example: `C:\Users\{my_name}\GitHub\custom-cards`
 2. Run `npm install`
-3. Run `gulp`.  
-Gulp builds your package every time you make a change to it.  
+3. Run `gulp`  
+Run Gulp to build your package every time you make a change to it.  
 **Tip:** After the first build, a gulp rebuild usually takes on the order of less than a second to complete.   
 If you see errors, they should be pretty clear, indicating the line number where you have to change something. Fix it!
 
 ## Step 5: Upload your card package
 
+Before you can use your cards with Watson Iot Platform, you must upload the card package to your custom cards HTTP server.
+
 To upload the card package:
-1. Optional: Start your local http server
+1. Optional: Start your local HTTP server
  1. Open a new console window to the same directory.
  2. Run `node app`.  
 This starts a local HTTP server for the custom cards package.  
 **Important:** Your cards are only available when the local server is up and running. For card development, it is fine if you run your server locally. For more stringent testing and for production you should deploy your custom cards package to an HTTP server that is available on the web.
 2. Upload the `custom-cards\public` folder to your web server, and make sure you can access it at: URL
 
-> This is where we need some specific information... How and what to upload to the HTTPS server. Also, is there anything specific the user has to do when running a local server to make it accessible to Iot Platform on Bluemix? What URL should they use for example?
+> This is where we need some specific information... How and what to upload to the HTTPS server.
+> Also, is there anything specific the user has to do when running a local server to make it accessible to IoT Platform on Bluemix? What URL should they use for example? I'm thinking local server would be ONLY for proof of concept, and that they would graduate away from this pretty quickly?
 
 ## Step 6: Link your package
 You can now link your new card package to Watson IoT Platform.  
@@ -178,8 +183,10 @@ If you are connecting to your own server, enter the URL of that server.
 - Now you can change your first new card step by step to adapt it to your needs. The automated build will rebuild your package every time you make a change and the changes will immediately be available after a browser refresh.
 - Congratulations!
 
-## Step 7: Clean up
-Your repo still contains multiple modules and cards. They can serve as a source for inspiration since they cover different aspects. You can also remove the modules if you do not need them.
-Remove the folder of the module
-Remove the entry in `DashboardConfig.json`
-Remove the reference in `modules/Modules.jsx`and `modules/Modules.less`
+## Cleaning up your repository
+Your repository might contain multiple modules and cards, some of which are purely scratch pads for development, or just plain obsolete. They can serve as a source for inspiration since they cover different aspects, but you can also remove the modules if you do not need them.
+
+To remove a module from your repository:
+1. Remove the folder of the module
+2. Remove the entry in `DashboardConfig.json`
+3. Remove the reference in `modules/Modules.jsx`and `modules/Modules.less`
