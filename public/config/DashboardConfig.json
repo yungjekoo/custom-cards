@@ -2,19 +2,27 @@
   "settings": {
     "packageName": "CustomCards"
   },
-
   "components": [
     {
       "name": "HelloWorld",
       "displayName": "HelloWorld",
-      "description": "Example card with simple customization and store",
-      "thumbnail" : "overview",
+      "description": "Example card with simple customization and store.",
+      "thumbnail": "Alert",
       "category": "Samples",
       "cardType": "NO_DATAPOINTS",
       "wrapper": "ReactWrapper",
-      "sizes": [[2,3],[4,4]],
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
       "module": "HelloWorld",
-      "parameters" : {
+      "parameters": {
         "component": "HelloWorld",
         "title": "Hello World!"
       },
@@ -23,17 +31,127 @@
     {
       "name": "EmptyCard",
       "displayName": "Empty card",
-      "description": "Plain card as a starting point for your development",
-      "thumbnail" : "overview",
+      "description": "Plain card as a starting point for your development.",
+      "thumbnail": "bee",
       "category": "Samples",
       "cardType": "NO_DATAPOINTS",
       "wrapper": "ReactWrapper",
-      "sizes": [[2,2],[3,3],[4,4]],
+      "sizes": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
       "module": "EmptyCard",
-      "parameters" : {
+      "parameters": {
         "component": "EmptyCard",
         "title": "Empty card!"
       }
+    },
+    {
+      "name": "Webcam",
+      "displayName": "Webcam",
+      "description": "Show a public webcam in a dashboard card. The webcam must be accessible without credentials and the URL must point to a snapshot picture.",
+      "thumbnail": "camera",
+      "category": "Samples",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "module": "Webcam",
+      "parameters": {
+        "component": "Webcam",
+        "title": "Webcam"
+      },
+      "customization": "WebcamProperties"
+    },
+    {
+      "name": "iFrame",
+      "displayName": "iFrame",
+      "description": "Show a web page inside a dashboard card. Use this card to integrate your content without any coding. Just specify the URL in the card configuration.",
+      "thumbnail": "Basic",
+      "category": "Samples",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "module": "iFrame",
+      "parameters": {
+        "component": "iFrame",
+        "title": "iFrame",
+        "url": "https://www.ibm.com/internet-of-things/"
+
+      },
+      "customization": "iFrameProperties"
+    },
+    {
+      "name": "FunctionGen",
+      "displayName": "Function Generator",
+      "description": "Simulates sensor values and augments an existing device with these values. You must create a device first. It is not necessary that this device exist physically. Select this device during configuration of the card and select functions to simulate.",
+      "thumbnail": "line-chart",
+      "category": "Samples",
+      "cardType": "SOURCE_ONLY",
+      "wrapper": "ReactWrapper",
+      "sizes": [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "module": "FunctionGen",
+      "parameters": {
+        "component": "FunctionGen",
+        "title": "Function Generator"
+      },
+      "customization": "FunctionGenProperties"
     }
   ]
 }

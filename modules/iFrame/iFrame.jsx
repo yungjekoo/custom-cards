@@ -16,10 +16,8 @@ Contributors:
 
 Frank Leo Mielke - Initial Contribution
 *****************************************************************************/
-var Modules = {};
-Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
-Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
-Modules.Webcam = require('./Webcam/Webcam.jsx');
-Modules.iFrame = require('./iFrame/iFrame.jsx');
-//Modules.FunctionGen = require('./FunctionGen/FunctionGen.jsx');
-module.exports = Modules;
+var iFrame = {};
+iFrame.iFrame = require('./cards/iFrame.jsx');
+iFrame.iFrameProperties = require('./customization/iFrameProperties.jsx');
+
+module.exports = iFrame;

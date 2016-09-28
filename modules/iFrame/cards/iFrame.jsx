@@ -16,10 +16,33 @@ Contributors:
 
 Frank Leo Mielke - Initial Contribution
 *****************************************************************************/
-var Modules = {};
-Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
-Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
-Modules.Webcam = require('./Webcam/Webcam.jsx');
-Modules.iFrame = require('./iFrame/iFrame.jsx');
-//Modules.FunctionGen = require('./FunctionGen/FunctionGen.jsx');
-module.exports = Modules;
+var React = require('react');
+
+var styles = {
+  empty: {
+    padding: "20px"
+  }
+}
+
+var iFrame = React.createClass({
+  render: function() {
+    var height = this.props.wrapper.realHeight;
+    var width = this.props.wrapper.realWidth;
+
+    if (width > 0 && height > 0 && this.props.url) {
+      return(
+          <div>
+            <iframe frameBorder={0} style={{height: height + "px", width: width + "px"}} src={this.props.url} height={height} width={width}></iframe>
+          </div>
+      )
+    } else {
+      return(
+        <div style={styles.empty}>
+          Loading...
+        </div>
+      )
+    }
+  }
+});
+
+module.exports = iFrame;
