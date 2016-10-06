@@ -14,12 +14,25 @@ See the License for the specific language governing permissions and limitations 
 
 Contributors:
 
-Frank Leo Mielke - Initial Contribution
+Marcus Kamieth - Initial Contribution
 *****************************************************************************/
-var Modules = {};
-Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
-Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
-Modules.Webcam = require('./Webcam/Webcam.jsx');
-Modules.iFrame = require('./iFrame/iFrame.jsx');
-//Modules.FunctionGen = require('./FunctionGen/FunctionGen.jsx');
-module.exports = Modules;
+var MyMath = {
+  sawTooth : function(x){
+    return x - Math.floor(x);
+  },
+  sawToothBack : function(x){
+    return Math.floor(x) - x + 1;
+  },
+  triangle : function(x){
+     return 1 - Math.abs(x%2 - 1);
+  },
+  booleanFunc : function(x){
+    return (x%1 <= 0.5)? true : false;
+  },
+  stringFunc : function(x){
+    var strings = ["Very slow", "Slow", "Average", "Fast", "Very fast"];
+    var index = Math.floor( Math.random() * strings.length);
+    return strings[index];
+  }
+}
+module.exports = MyMath;

@@ -14,12 +14,11 @@ See the License for the specific language governing permissions and limitations 
 
 Contributors:
 
-Frank Leo Mielke - Initial Contribution
+Marcus Kamieth - Initial Contribution
 *****************************************************************************/
-var Modules = {};
-Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
-Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
-Modules.Webcam = require('./Webcam/Webcam.jsx');
-Modules.iFrame = require('./iFrame/iFrame.jsx');
-//Modules.FunctionGen = require('./FunctionGen/FunctionGen.jsx');
-module.exports = Modules;
+var FunctionGen = {};
+FunctionGen.FunctionGen = require('./cards/FunctionGen.jsx');
+FunctionGen.FunctionGenProperties = require('./customization/FunctionGenProperties.jsx');
+FunctionGen.FunctionGenStore = require('./stores/FunctionGenStore.js');
+
+module.exports = FunctionGen;
