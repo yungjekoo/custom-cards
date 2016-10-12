@@ -5,21 +5,21 @@ Use custom cards to display your data the way you want to see it. Start your exp
 
 ## Overview
 
-The custom-cards repository is a template from which you can start your custom card creation by forking the repository to your own environment, then copying and modifying the sample cards to meet your needs. You then deploy your cards to your own custom cards HTTP server and then connect to that server from Watson IoT Platform. After the servers are connected, the cards in your custom cards server can be used seamlessly with the default Watson IoT Platform cards.
+The custom cards repository is a template from which you can start your custom card creation by forking the repository to your own environment, then copying and modifying the sample cards to meet your needs. You then deploy your cards to your own custom cards HTTP server and then connect to that server from Watson IoT Platform. After the servers are connected, the cards in your custom cards server can be used seamlessly with the default Watson IoT Platform cards.
 
 Learn more about custom cards in the [IBM Watson IoT Platform documentation](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html).
 **Tip:** To quickly take a look at some sample custom cards, you can link your Watson IoT Platform organization to the custom cards sample server. For information, see *Step 6: Link your package* in this readme.
 
 ## Before you begin
 
-Make sure that your local development environment meets the following requirements:
-- Node.js with NPM
+Make sure that your local development environment has Node.js with the npm node package manager.  
+
 For information about installing Node.js, including the download links, go here: https://nodejs.org
 
 Also, to host your custom cards package, you must set up an HTTP server that meets the following requirements:
 - The server must not require credentials to access.
 - The server must use the HTTPS protocol.
-- The server must support CORS connections.  
+- The server must support Cross-Origin Resource Sharing (CORS) connections.  
 
 **Tip:** For test and proof of concept work, you can use the built-in sample node.js server, which is configured to meet these requirements.
 
@@ -28,7 +28,7 @@ For information about how secure your custom cards server, see [Learn more about
 
 ## Getting started
 
-Developing new cards for the dashboard by using the custom-cards samples is easy. You can use the samples in this repository to get up and running in just a few minutes.
+Developing new cards for the dashboard by using the custom cards samples is easy. You can use the samples in this repository to get up and running in just a few minutes.
 
 The sample repository contains two samples: EmptyCard and HelloWorld
 
@@ -52,10 +52,10 @@ Use this module as your template.
 For example, change all occurrences of `HelloWorld`to `MyCard`.
  **Tip:** You can use a global find and replace in all files in the `MyCard` module folder to change all occurrences at the same time.  
 
-File | Change
+File | Description
 --- | ---
 `MyCard/cards/MyCard.jsx`| Your React card component.  
-`MyCard/customization/MyCardProperties.jsx`| The customization plugin.
+`MyCard/customization/MyCardProperties.jsx`| The customization plug-in.
 `MyCard/stores/MyCardStore.js`| The DataStore to deliver new data to the card.
 `MyCard/MyCard.jsx`| The main module file, which references all the other components of your module. If you add additional files, for example, if your your module contains multiple cards, you must reference them here.
 `MyCard/MyCard.less` | If you need CSS styles, add them to the `MyCard/MyCard.less` file in the same folder.
@@ -125,13 +125,13 @@ The name of one of a set of standard SVG icons. The icon is used in the customiz
  The type of card. The category is used to sort the cards in the card gallery.
 ...
 - cardType  
-The definition of the basic requirements of the card. You can define if your card needs data points or if it is completely preconfigured. You can use multiple values that are separated by a comma.  
+The definition of the basic requirements of the card. Use `cardType` to for example specify that the card requires property data points or that it is preconfigured and can be used as-is. You can use multiple values that are separated by a comma.  
 The following cardType values are supported:
- - NO_DATAPOINTS - Do not show data set definition, for example, you can use this value if you do not want to access IoT data points
- - SINGLE_DATAPOINT - Only one data point can be defined
- - EVENT_ONLY - Do not show the property field in data point definition, just ask for the event name
- - SOURCE_ONLY - Select only the source but specific data points are not defined
- - NO_CUSTOMIZATION - Skip card customization completely and add the card immediately for the event name
+ - NO_DATAPOINTS - Do not show data set definition, for example, you can use this value if you do not want to access IoT data points.
+ - SINGLE_DATAPOINT - Only one data point can be defined.
+ - EVENT_ONLY - Only require an event name. Do not show the property field in data point definition.
+ - SOURCE_ONLY - Select only the source but specific data points are not defined.
+ - NO_CUSTOMIZATION - Skip card customization completely and add the card immediately for the event name.
 - wrapper  
 Defines the wrapper class, which sets the technology that is used for the card implementation. **Important:** At this point, only React cards are supported. Use `"wrapper": "ReactWrapper",`.
 - sizes  
@@ -140,24 +140,24 @@ An array that is used to define the supported sizes for the card. Each entry rep
  The name of your custom module. The name must match the name of the folder and the object name that is used in your main module file and the main module file itself.
 - parameters  
 Parameters that are passed to the wrapper and the card itself.   
-For example, you can directly specify custom parameters, such as credentials for your test service. All instances of this card have access to these parameters as properties. If you defined a customization plugin, the defined fields result in parameters that are accessible by the card. For example, you can use a switch to specify whether a chart is oriented horizontally or vertically.  
+For example, you can directly specify custom parameters, such as credentials for your test service. All instances of this card have access to these parameters as properties. If you defined a customization plug-in, the defined fields result in parameters that are accessible by the card. For example, you can use a switch to specify whether a chart is oriented horizontally or vertically.  
 The following two parameters are mandatory:
  - component  
 The name of the main class of the card.
  - title  
 The default title for the card. The user can change the title in the customization dialog box.
 - customization  
-The name of the card customization plugin. The card customization dialog box is generic, but you can add custom fields in the settings section of the dialog box. The HelloWorld example provides a simple customization plugin.
+The name of the card customization plug-in. The card customization dialog box is generic, but you can add custom fields in the settings section of the dialog box. The HelloWorld example provides a simple customization plug-in.
 
 
 ## Step 4: Build your card package.
 
 To build the card package:
 1. Open a console and navigate to the root directory of your repository.  
-For example: `C:\Users\{my_name}\GitHub\custom-cards`
+For example, navigate to: `C:\Users\{my_name}\GitHub\custom-cards`
 2. Run `npm install`
 3. Run `gulp`  
-If you see errors, they should include the line number where you must change something. Fix it!
+If you see errors, they should include the line number where you must change something. Correct the error and try again.
 
 **Tip:** Leave Gulp running to automatically rebuild your package every time you make a change. After the first build, a Gulp rebuild usually takes approximately less than a second to complete.   
 
@@ -170,7 +170,7 @@ Before you can use your cards with Watson Iot Platform, you must deploy the card
 ### Deploy by using the local node.js server
 To deploy the card package:
 1. Open a new console window to the root directory of your repository.  
- For example: `C:\Users\{my_name}\GitHub\custom-cards`
+ For example, navigate to: `C:\Users\{my_name}\GitHub\custom-cards`
 2. Run `node app`.  
 This command starts a local HTTP server for the custom cards package.  
 **Important:** Your cards are only available when the local server is up and running. For card development, it is fine to run your server locally. For more stringent testing and for production, you should deploy your custom cards package to an HTTP server that is available on the web.
@@ -189,7 +189,7 @@ Your card package is now available on your custom cards server. You can now link
 ## Step 6: Link your package.
 Before you can use your card, you must link the custom cards server to Watson IoT Platform.  
 
-**Important:** Custom cards are currently an experimental service, and the custom cards settings are stored locally in your browser. You must register your custom cards server in each browser that you use to access the Watson IoT Platform dashboard.
+**Important:** Custom cards are currently an experimental service, and the custom cards settings are stored locally in your browser. You must register your custom cards server in each browser that you want to use to access custom cards in your Watson IoT Platform dashboard dashboards.
 
 To link the custom cards server:
 1. Log in to the Watson IoT Platform dashboard as a user with administrative rights.
@@ -210,8 +210,9 @@ If you are connecting to your own server, enter the URL of that server.
  3. Open the new board.
  4. Click **Add New Card**.  
  5. Scroll down to **Custom cards** and select one of the sample cards.  
- Complete the card creation process. For information, see [Creating boards and cards](https://new-console.ng.bluemix.net/docs/services/IoT/data_visualization.html#visualizing_data).
- 6. Your new custom card is now in your new board displaying data from your connected device.
+ Complete the card creation process. For information, see [Creating boards and cards](https://new-console.ng.bluemix.net/docs/services/IoT/data_visualization.html#visualizing_data).  
+
+Your new custom card is now in your new board displaying data from your connected device.
 
 Congratulations! Now you can change your first new card step-by-step to adapt it to your needs.
 
