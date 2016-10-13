@@ -200,8 +200,10 @@ To link the custom cards server:
  4. In the extensions dashboard, click **Setup** on the custom cards tile to edit the settings.
  5. In the Configure Custom Cards dialog box, in the server field, enter the URL for the external card server.  
 **Note:** The URL should start with HTTPS.  
-**Tip:** The URL of the public sample card server is https://customcards.mybluemix.net
+**Tip:** The URL of the public sample card server is https://customcards.mybluemix.net  
 If you are connecting to your own server, enter the URL of that server.
+ 5. Click **Retrieve Certificate** to connect to the custom cards server and retrieve the security certificate information for the server.  
+  **Important:** Use the certificate information to verify that you are connecting to the intended known and secured custom cards server.
  4. Click **OK** to add the server connection.
 5. Create a new card that is based on the sample cards.
  1. In the Watson IoT Platform dashboard, go to **Boards**.
