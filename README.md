@@ -125,7 +125,7 @@ The name of one of a set of standard SVG icons. The icon is used in the customiz
  The type of card. The category is used to sort the cards in the card gallery.
 ...
 - cardType  
-The definition of the basic requirements of the card. Use `cardType` to for example specify that the card requires property data points or that it is preconfigured and can be used as-is. You can use multiple values that are separated by a comma.  
+The definition of the basic requirements of the card. Use `cardType` to, for example, specify that the card requires property data points or that it is preconfigured and can be used as-is. You can use multiple values that are separated by a comma.  
 The following cardType values are supported:
  - NO_DATAPOINTS - Do not show data set definition, for example, you can use this value if you do not want to access IoT data points.
  - SINGLE_DATAPOINT - Only one data point can be defined.
