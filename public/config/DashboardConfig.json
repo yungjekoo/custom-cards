@@ -119,39 +119,6 @@
 
       },
       "customization": "iFrameProperties"
-    },
-    {
-      "name": "FunctionGen",
-      "displayName": "Function Generator",
-      "description": "Simulates sensor values and augments an existing device with these values. You must create a device first. It is not necessary that this device exist physically. Select this device during configuration of the card and select functions to simulate.",
-      "thumbnail": "line-chart",
-      "category": "Samples",
-      "cardType": "SOURCE_ONLY",
-      "wrapper": "ReactWrapper",
-      "sizes": [
-        [
-          3,
-          4
-        ],
-        [
-          3,
-          5
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          3,
-          7
-        ]
-      ],
-      "module": "FunctionGen",
-      "parameters": {
-        "component": "FunctionGen",
-        "title": "Function Generator"
-      },
-      "customization": "FunctionGenProperties"
     }
   ]
 }
