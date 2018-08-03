@@ -1,0 +1,14 @@
+applications:
+- services:
+  - <app_name>-iotf-service
+  memory: 256M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: <custom_card_server_name>
+  host: <custom_card_server_name>
+  command: npm install && node app.js
+  disk_quota: 1024M
+declared-services:
+   <app_name>-iotf-service:
+    label: iotf-service
+    plan: iotf-service-free

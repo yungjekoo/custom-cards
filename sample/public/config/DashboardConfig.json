@@ -1,0 +1,47 @@
+{
+  "settings": {
+    "packageName": "CustomCards"
+  },
+  "components": [
+      {
+      "name": "imgRender",
+      "displayName": "imgRender",
+      "description": "Show an image inside a dashboard card. Use this card to integrate your content without any coding.",
+      "thumbnail": "Basic",
+      "category": "Samples",
+      "cardType": "SINGLE_DATAPOINT",
+      "wrapper": "ReactWrapper",
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "module": "imgRender",
+      "parameters": {
+        "component": "imgRender",
+        "title": "imgRender",
+        "url": "https://<custom_card_server_name>.mybluemix.net/img/",
+        "wsurl":"wss://<custom_card_server_name>.mybluemix.net/"
+
+      },
+      "customization": "imgRenderProperties"
+    }
+  ]
+}
