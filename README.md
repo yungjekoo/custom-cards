@@ -26,6 +26,25 @@ Also, to host your custom cards package, you must set up an HTTP server that mee
 For information about how secure your custom cards server, see [Learn more about custom cards](https://new-console.ng.bluemix.net/docs/services/IoT/custom_cards/custom-cards.html) IBM Watson IoT Platform documentation.
 
 
+## Security
+The following requirements are set:
+- The directory that serves the custom card content on the server must not require credentials to access.
+
+No authentication is provided to the custom card server when connecting to access and load custom cards.
+- The server must use the HTTP Secure (HTTPS) protocol.
+- The server must support Cross-origin resource sharing (CORS) connections.
+
+To protect the custom cards code and the card server itself, the card server should be located and secured using defense in depth. This includes firewall protection to restrict access to the custom card server.
+
+Custom card processing is always between a user’s browser and the custom cards server. The {{site.data.keyword.iot_short_notm}} backend is never involved in processing or adjusting the custom cards information and code.
+
+There are no restrictions placed on the JavaScript code that you choose to deploy in your cards on your custom cards server. Javascript code in custom cards has access to all information held in the browser, just as any other cards running in the dashboard.  Make sure that the correct custom card server is supplying the code to the browser to display and process the custom cards.
+
+The cards execute their code in your browser session exactly as written. Furthermore, the custom cards server connection is created with no credentials supplied to the custom card server. A users's browser can connect to any configured custom cards server.
+
+It is important that you only configure known and secured custom cards servers to supply custom cards to your users’ dashboards.
+
+
 ## Getting started
 
 Developing new cards for the dashboard by using the custom cards samples is easy. You can use the samples in this repository to get up and running in just a few minutes.
