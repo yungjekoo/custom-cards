@@ -16,11 +16,9 @@ Contributors:
 
 Frank Leo Mielke - Initial Contribution
 *****************************************************************************/
-var Modules = {};
-Modules.HelloWorld = require('./HelloWorld/HelloWorld.jsx');
-Modules.EmptyCard = require('./EmptyCard/EmptyCard.jsx');
-Modules.Webcam = require('./Webcam/Webcam.jsx');
-Modules.iFrame = require('./iFrame/iFrame.jsx');
-Modules.MyCard = require('./MyCard/MyCard.jsx');
-//Modules.FunctionGen = require('./FunctionGen/FunctionGen.jsx');
-module.exports = Modules;
+var MyCard = {};
+MyCard.MyCard = require('./cards/MyCard.jsx');
+MyCard.MyCardProperties = require('./customization/MyCardProperties.jsx');
+MyCard.MyCardStore = require('./stores/MyCardStore.js');
+
+module.exports = MyCard;

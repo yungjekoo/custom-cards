@@ -1,6 +1,6 @@
 {
   "settings": {
-    "packageName": "CustomCards"
+    "packageName": "MyCustomCardPackage"
   },
   "components": [
     {
@@ -27,6 +27,31 @@
         "title": "Hello World!"
       },
       "customization": "HelloWorldProperties"
+    },
+    {
+      "name": "MyCard",
+      "displayName": "MyCard",
+      "description": "Example card with simple customization and store.",
+      "thumbnail": "Alert",
+      "category": "Devices",
+      "cardType": "NO_DATAPOINTS",
+      "wrapper": "ReactWrapper",
+      "sizes": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "module": "MyCard",
+      "parameters": {
+        "component": "MyCard",
+        "title": "MyCard!"
+      },
+      "customization": "MyCardProperties"
     },
     {
       "name": "EmptyCard",
